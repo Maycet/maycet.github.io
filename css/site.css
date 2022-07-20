@@ -1,11 +1,21 @@
 html {
     font-size: 13px;
+    color: dimgrey;
 }
 
 @media (min-width: 768px) {
     html {
         font-size: 1rem;
     }
+}
+
+h1 {
+    margin: 3rem;
+    text-align: center;
+}
+
+a, h1, h2, h3, h4, h5, h6 {
+    color: dimgrey;
 }
 
 html {
@@ -32,4 +42,34 @@ footer {
 
 div {
     margin: 0.5rem;
+}
+
+.picture-format {
+    /*display: block;*/
+    /*margin: 0 auto 0 auto;*/
+    /*background-position: center;*/
+    /*background-size: cover;*/
+    /*object-fit: cover;*/
+    border-radius: 1rem;
+    box-shadow: 0 0 2rem -1rem #000000;
+}
+
+/* unvisited link */
+a:link {
+    color: grey;
+}
+
+/* visited link */
+a:visited {
+    color: dimgrey;
+}
+
+/* mouse over link */
+a:hover {
+    color: darkgray;
+}
+
+/* selected link */
+a:active {
+    color: lightgrey;
 }
