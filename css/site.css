@@ -1,10 +1,10 @@
 html {
-    font-size: 14px;
+    font-size: 13px;
 }
 
 @media (min-width: 768px) {
     html {
-        font-size: 16px;
+        font-size: 1rem;
     }
 }
 
@@ -16,5 +16,20 @@ html {
 
 body {
     background-color: #EAEEFA;
-    margin-bottom: 60px;
+    margin-bottom: 5rem;
+}
+
+nav {
+    background-color: #1d1d1d;
+    line-height: 2rem;
+}
+
+footer {
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 75%;
+}
+
+div {
+    margin: 0.5rem;
 }
