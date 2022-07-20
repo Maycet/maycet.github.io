@@ -12,16 +12,9 @@ html {
     position: relative;
     min-height: 100%;
     font-family: Calibri, Arial, sans-serif;
-    font-size: 75%;
 }
 
 body {
-    font-size: 1.8rem;
     background-color: #EAEEFA;
     margin-bottom: 60px;
-}
-
-nav {
-    background-color: #1d1d1d;
-    line-height: 6rem;
 }
