@@ -34,6 +34,10 @@ nav {
     line-height: 2rem;
 }
 
+.navbar-light .navbar-brand {
+    color: dimgrey;
+}
+
 h1 {
     margin: 3rem;
     text-align: center;
