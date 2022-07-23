@@ -1,6 +1,15 @@
 html {
     font-size: 13px;
     color: dimgrey;
+    position: relative;
+    min-height: 100%;
+    font-family: "Exo2-Light";
+}
+
+body {
+    background-color: #EAEEFA;
+    margin-bottom: 5rem;
+    font-family: "Exo2-Light";
 }
 
 @font-face {
@@ -21,6 +30,10 @@ html {
     }
 }
 
+nav {
+    line-height: 2rem;
+}
+
 h1 {
     margin: 3rem;
     text-align: center;
@@ -29,23 +42,6 @@ h1 {
 a, h1, h2, h3, h4, h5, h6 {
     color: dimgrey;
     font-family: "Exo2-SemiBold";
-}
-
-html {
-    position: relative;
-    min-height: 100%;
-    font-family: "Exo2-Light";
-}
-
-body {
-    background-color: #EAEEFA;
-    margin-bottom: 5rem;
-    font-family: "Exo2-Light";
-}
-
-nav {
-    background-color: #1d1d1d;
-    line-height: 2rem;
 }
 
 footer {
@@ -58,6 +54,10 @@ div {
     margin: 0.5rem;
 }
 
+.vertical-separated {
+    margin: 2.5rem auto;
+}
+
 .picture-format {
     /*display: block;*/
     /*margin: 0 auto 0 auto;*/
@@ -66,6 +66,11 @@ div {
     /*object-fit: cover;*/
     border-radius: 1rem;
     box-shadow: 0 0 2rem -1rem #000000;
+}
+
+.image-footer {
+    text-align: center;
+    font-size: 75%;
 }
 
 /* unvisited link */
