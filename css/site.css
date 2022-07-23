@@ -1,0 +1,98 @@
+html {
+    font-size: 13px;
+    color: dimgrey;
+    position: relative;
+    min-height: 100%;
+    font-family: "Exo2-Light";
+}
+
+body {
+    background-color: #EAEEFA;
+    margin-bottom: 5rem;
+    font-family: "Exo2-Light";
+}
+
+@font-face {
+    font-family: "Exo2-SemiBold";
+    src: url(../fonts/Exo2-SemiBold.ttf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Exo2-Light";
+    src: url(../fonts/Exo2-Light.ttf);
+    font-display: swap;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 1rem;
+    }
+}
+
+nav {
+    line-height: 2rem;
+}
+
+.navbar-light .navbar-brand {
+    color: dimgrey;
+}
+
+h1 {
+    margin: 3rem;
+    text-align: center;
+}
+
+a, h1, h2, h3, h4, h5, h6 {
+    color: dimgrey;
+    font-family: "Exo2-SemiBold";
+}
+
+footer {
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 75%;
+}
+
+div {
+    margin: 0.5rem;
+}
+
+.vertical-separated {
+    margin: 2.5rem auto;
+}
+
+.picture-format {
+    /*display: block;*/
+    /*margin: 0 auto 0 auto;*/
+    /*background-position: center;*/
+    /*background-size: cover;*/
+    /*object-fit: cover;*/
+    border-radius: 1rem;
+    box-shadow: 0 0 2rem -1rem #000000;
+}
+
+.image-footer {
+    text-align: center;
+    font-size: 75%;
+}
+
+/* unvisited link */
+a:link {
+    color: grey;
+}
+
+/* visited link */
+a:visited {
+    color: dimgrey;
+}
+
+/* mouse over link */
+a:hover {
+    color: darkgray;
+}
+
+/* selected link */
+a:active {
+    color: lightgrey;
+}
