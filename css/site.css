@@ -104,6 +104,7 @@ table, th {
     color: #023047;
     position: relative;
     padding: 1em;
+    border-collapse: separate;
 }
 
 td {
