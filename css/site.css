@@ -96,3 +96,29 @@ a:hover {
 a:active {
     color: lightgrey;
 }
+
+table, th {
+    text-align: center !important;
+    border: 1px solid #023047;
+    background-color: #219EBC;
+    color: #023047;
+    position: relative;
+    padding: 1em;
+}
+
+td {
+    text-align: center !important;
+    border: 1px dotted #023047;
+    background-color: #8ECAE6;
+    color: #023047;
+    width: 50px;
+    height: 50px;
+}
+
+.td-unavailable {
+    border: 1px dotted #810000;
+    background-color: #FFB703;
+    color: #810000;
+    width: 50px;
+    height: 50px;
+}
