@@ -1,5 +1,5 @@
 html {
-    font-size: 0.85rem;
+    font-size: 0.85em;
     color: dimgrey;
     position: relative;
     min-height: 100%;
@@ -8,7 +8,7 @@ html {
 
 body {
     background-color: #EAEEFA;
-    margin-bottom: 5rem;
+    margin-bottom: 5em;
     font-family: "Exo2-Light";
 }
 
@@ -24,14 +24,14 @@ body {
     font-display: swap;
 }
 
-@media (min-width: 53rem) {
+@media (min-width: 53em) {
     html {
-        font-size: 1rem;
+        font-size: 1em;
     }
 }
 
 nav {
-    line-height: 2rem;
+    line-height: 2em;
 }
 
 .navbar-light .navbar-brand {
@@ -39,7 +39,7 @@ nav {
 }
 
 h1 {
-    margin: 3rem;
+    margin: 3em;
     text-align: center;
 }
 
@@ -49,17 +49,17 @@ a, h1, h2, h3, h4, h5, h6 {
 }
 
 footer {
-    margin: 1rem;
-    padding: 1rem;
+    margin: 1em;
+    padding: 1em;
     font-size: 75%;
 }
 
 div {
-    margin: 0.5rem;
+    margin: 0.5em;
 }
 
 .vertical-separated {
-    margin: 2.5rem auto;
+    margin: 2.5em auto;
 }
 
 .picture-format {
@@ -68,8 +68,8 @@ div {
     /*background-position: center;*/
     /*background-size: cover;*/
     /*object-fit: cover;*/
-    border-radius: 1rem;
-    box-shadow: 0 0 2rem -1rem #000000;
+    border-radius: 1em;
+    box-shadow: 0 0 2em -1em #000000;
 }
 
 .image-footer {
@@ -99,26 +99,26 @@ a:active {
 
 table, th {
     text-align: center !important;
-    border: 0.075rem solid #072227;
+    border: 0.075em solid #072227;
     background-color: #4FBDBA;
     color: #072227;
     position: relative;
-    padding: 1rem;
+    padding: 1em;
 }
 
 .td-unavailable {
-    border: 0.05rem dotted #FF5C8D;
+    border: 0.05em dotted #FF5C8D;
     background-color: #FFC0D3;
     color: #FF5C8D;
-    width: 3rem;
-    height: 3rem;
+    width: 3em;
+    height: 3em;
 }
 
 td {
     text-align: center !important;
-    border: 0.05rem dotted #70AF85;
+    border: 0.05em dotted #70AF85;
     background-color: #C6EBC9;
     color: #70AF85;
-    width: 3rem;
-    height: 3rem;
+    width: 3em;
+    height: 3em;
 }
