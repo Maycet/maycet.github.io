@@ -110,8 +110,8 @@ table, th {
     border: 0.05em dotted #FF5C8D;
     background-color: #FFC0D3;
     color: #FF5C8D;
-    width: 3em;
-    height: 3em;
+    width: 2.5em;
+    height: 2.5em;
 }
 
 td {
@@ -119,6 +119,6 @@ td {
     border: 0.05em dotted #70AF85;
     background-color: #C6EBC9;
     color: #70AF85;
-    width: 3em;
-    height: 3em;
+    width: 2.5em;
+    height: 2.5em;
 }
