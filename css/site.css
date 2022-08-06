@@ -1,15 +1,20 @@
 html {
     font-size: 0.85em;
-    color: dimgrey;
+    color: gray;
     position: relative;
     min-height: 100%;
     font-family: "Exo2-Light";
 }
 
 body {
-    background-color: #EAEEFA;
+    background-color: #202020;
     margin-bottom: 5em;
     font-family: "Exo2-Light";
+    color: gray;
+}
+
+.bg-darkgray {
+    background-color: #3A3A3A;
 }
 
 @font-face {
@@ -34,17 +39,13 @@ nav {
     line-height: 2em;
 }
 
-.navbar-light .navbar-brand {
-    color: dimgrey;
-}
-
 h1 {
     margin: 3em;
     text-align: center;
 }
 
 a, h1, h2, h3, h4, h5, h6 {
-    color: dimgrey;
+    color: darkgray;
     font-family: "Exo2-SemiBold";
 }
 
@@ -69,7 +70,7 @@ div {
     /*background-size: cover;*/
     /*object-fit: cover;*/
     border-radius: 1em;
-    box-shadow: 0 0 2em -1em #000000;
+    box-shadow: 0 0 3em -0.5em black;
 }
 
 .image-footer {
@@ -79,46 +80,20 @@ div {
 
 /* unvisited link */
 a:link {
-    color: grey;
+    color: darkgray;
 }
 
 /* visited link */
 a:visited {
-    color: dimgrey;
+    color: darkgray;
 }
 
 /* mouse over link */
 a:hover {
-    color: darkgray;
+    color: #E0AAFF;
 }
 
 /* selected link */
 a:active {
-    color: lightgrey;
-}
-
-table, th {
-    text-align: center !important;
-    border: 0.075em solid #072227;
-    background-color: #4FBDBA;
-    color: #072227;
-    position: relative;
-    padding: 1em;
-}
-
-.td-unavailable {
-    border: 0.05em dotted #FF5C8D;
-    background-color: #FFC0D3;
-    color: #FF5C8D;
-    width: 2.5em;
-    height: 2.5em;
-}
-
-td {
-    text-align: center !important;
-    border: 0.05em dotted #70AF85;
-    background-color: #C6EBC9;
-    color: #70AF85;
-    width: 2.5em;
-    height: 2.5em;
+    color: white;
 }
