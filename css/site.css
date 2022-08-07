@@ -1,16 +1,16 @@
 html {
     font-size: 0.85em;
-    color: gray;
+    color: darkgray;
     position: relative;
     min-height: 100%;
-    font-family: "Exo2-Light";
+    font-family: "Exo2-SemiBold";
 }
 
 body {
     background-color: #202020;
     margin-bottom: 5em;
-    font-family: "Exo2-Light";
-    color: gray;
+    font-family: "Exo2-SemiBold";
+    color: darkgray;
 }
 
 .bg-darkgray {
@@ -40,12 +40,12 @@ nav {
 }
 
 h1 {
-    margin: 3em;
+    margin: 1.5em;
     text-align: center;
 }
 
 a, h1, h2, h3, h4, h5, h6 {
-    color: darkgray;
+    color: white;
     font-family: "Exo2-SemiBold";
 }
 
@@ -53,6 +53,7 @@ footer {
     margin: 1em;
     padding: 1em;
     font-size: 75%;
+    font-family: "Exo2-Light";
 }
 
 div {
@@ -60,7 +61,7 @@ div {
 }
 
 .vertical-separated {
-    margin: 2.5em auto;
+    margin: 2em auto;
 }
 
 .picture-format {
@@ -70,7 +71,7 @@ div {
     /*background-size: cover;*/
     /*object-fit: cover;*/
     border-radius: 1em;
-    box-shadow: 0 0 3em -0.5em black;
+    box-shadow: 0 0 1em 0em black;
 }
 
 .image-footer {
@@ -85,7 +86,7 @@ a:link {
 
 /* visited link */
 a:visited {
-    color: darkgray;
+    color: white;
 }
 
 /* mouse over link */
@@ -95,5 +96,5 @@ a:hover {
 
 /* selected link */
 a:active {
-    color: white;
+    color: #A032C8;
 }
