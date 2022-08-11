@@ -61,7 +61,7 @@ div {
 }
 
 .vertical-separated {
-    margin: 2em auto;
+    margin: 1em auto !important;
 }
 
 .picture-format {
@@ -97,4 +97,36 @@ a:hover {
 /* selected link */
 a:active {
     color: #A032C8;
+}
+
+.grid-container5 {
+    display: grid;
+    place-items: center;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 1em;
+    width: 75%;
+    margin: auto;
+}
+
+.grid-container4 {
+    display: grid;
+    place-items: center;
+    grid-template-columns: auto auto auto auto;
+    width: 60%;
+    margin: auto;
+}
+
+.grid-container3 {
+    display: grid;
+    place-items: center;
+    grid-template-columns: auto auto auto;
+    gap: 0.5em;
+    width: 45%;
+    margin: auto;
+}
+
+.grid-item {
+    padding: 0.5em;
+    text-align: center;
+    width: 100%;
 }
