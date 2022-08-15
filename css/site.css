@@ -24,6 +24,12 @@ body {
 }
 
 @font-face {
+    font-family: "Exo2-ExtraBoldItalic";
+    src: url(../fonts/Exo2-ExtraBoldItalic.ttf);
+    font-display: swap;
+}
+
+@font-face {
     font-family: "Exo2-Light";
     src: url(../fonts/Exo2-Light.ttf);
     font-display: swap;
@@ -47,6 +53,11 @@ h1 {
 a, h1, h2, h3, h4, h5, h6 {
     color: white;
     font-family: "Exo2-SemiBold";
+}
+
+emph {
+    color: white;
+    font-family: "Exo2-ExtraBoldItalic";
 }
 
 footer {
@@ -129,9 +140,4 @@ a:active {
     padding: 0.5em;
     text-align: center;
     width: 100%;
-}
-
-table {
-    border-collapse: separate;
-    border-spacing: 0 2em;
 }
