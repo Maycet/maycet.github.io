@@ -85,6 +85,10 @@ div {
     box-shadow: 0 0 1em 0em black;
 }
 
+.picture-drop-shadow {
+    filter: drop-shadow(0em 0em 0.5em black);
+}
+
 .image-footer {
     text-align: center;
     font-size: 75%;
