@@ -114,12 +114,21 @@ a:active {
     color: #A032C8;
 }
 
+.grid-container6 {
+    display: grid;
+    place-items: center;
+    grid-template-columns: auto auto auto auto auto auto;
+    gap: 0.5em;
+    width: 72%;
+    margin: auto;
+}
+
 .grid-container5 {
     display: grid;
     place-items: center;
     grid-template-columns: auto auto auto auto auto;
-    gap: 1em;
-    width: 75%;
+    gap: 0.5em;
+    width: 60%;
     margin: auto;
 }
 
@@ -127,7 +136,8 @@ a:active {
     display: grid;
     place-items: center;
     grid-template-columns: auto auto auto auto;
-    width: 60%;
+    gap: 0.5em;
+    width: 48%;
     margin: auto;
 }
 
@@ -136,7 +146,7 @@ a:active {
     place-items: center;
     grid-template-columns: auto auto auto;
     gap: 0.5em;
-    width: 45%;
+    width: 36%;
     margin: auto;
 }
 
