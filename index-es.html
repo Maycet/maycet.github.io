@@ -1,92 +1,359 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Maycet</title>
-    <link rel="icon" type="image/x-icon" href="maycet.ico">
-    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/site.css" asp-append-version="true" />
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Icon -->
+    <link rel="icon" type="image/x-icon" href="img/maycet.ico">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:ital,wght@0,
+		  100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+
+    <!-- Third party CSS files -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="lib/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="lib/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="lib/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template main CSS file -->
+    <link href="css/site.css" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-darkgray box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index-es"><img src="img/silueta_blanco.png" width="25em" alt="Logo"> Maycet</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
-                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index-es">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Proyectos">Proyectos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="SobreMi">Sobre mí</a>
-                        </li>
-                    </ul>
-                </div>
+
+    <!-- Header -->
+    <header id="header" class="d-flex align-items-center">
+        <div class="container d-flex align-items-center justify-content-between">
+            <div class="logo">
+                <a href=""><img src="img/maycet.png" alt="" class="img-fluid"></a>
             </div>
-        </nav>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li class="dropdown">
+                        <a><span>Navegar</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a class="nav-link scrollto" href="">Inicio</a></li>
+                            <li><a class="nav-link scrollto" href="#about">Sobre mí</a></li>
+                            <li><a class="nav-link scrollto" href="#resume">Currículum</a></li>
+                            <li class="dropdown">
+                                <a href="#projects"><span>Projectos</span> <i class="bi bi-chevron-right"></i></a>
+                                <ul>
+                                    <li><a href="pages/programming-es">Programming</a></li>
+                                    <li><a href="pages/gallery-es">Ilustración</a></li>
+                                    <li><a href="pages/academic-es">Académico</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <div class="container">
+    <!-- Intro section -->
+    <section id="intro" class="d-flex flex-column align-items-center justify-content-center">
         <h1>Francisco A. Mayorga Cetina</h1>
+        <h2>Matemático</h2>
+        <a href="#about" class="btn-get-started scrollto"><i class="bi bi-chevron-double-down"></i></a>
+    </section>
 
-        <div class="row vertical-separated">
-            <div class="col" style="width:50%; text-align:right;">
-                <a href="SobreMi">
-                    <img class="picture-drop-shadow" src="img/foto_francisco.png" width="85%" alt="Profile photo">
-                </a>
-            </div>
-            <div class="col" style="width:50%; text-align:left; align-self:center;">
-                <h4><a href="SobreMi">Sobre mí</a></h4>
-                <p>
-                    Soy un matemático y desarrollador de software colombiano. Interesado en ilustración, diseño gráfico, cubos de Rubik y más.
-                </p>
-            </div>
-        </div>
+    <main id="main">
 
-        <div class="row vertical-separated">
-            <div class="col" style="width:50%; text-align:left; align-self:center;">
-                <h4><a href="Proyectos">Proyectos</a></h4>
-                <p>
-                    Tengo muchos proyectos diferentes: desde desarrollo de software/juegos y matemáticas, hasta la transmisión en vivo de juegos y algunas cosas en diseño gráfico.
-                </p>
+        <!-- About section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="row no-gutters">
+                    <div class="picture-format image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start"></div>
+                    <div class="col-xl-7 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch">
+                        <div class="content d-flex flex-column justify-content-center">
+                            <h3><a href="pages/about-es">Sobre mí</a></h3>
+                            <p>Soy un matemático y desarrollador de software colombiano. Interesado en la tecnología, videojuegos, ilustración y más.</p>
+                            <div class="row">
+                                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                                    <div class="count-box">
+                                        <i class="bi bi-clock"></i>
+                                        <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="0.25" class="purecounter"></span>
+                                        <p><strong>Años de experiendia</strong> desarrollando en ambientes de .NET.</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                                    <div class="count-box">
+                                        <i class="bi bi-journal-richtext"></i>
+                                        <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="0.25" class="purecounter"></span>
+                                        <p><strong>Proyectos</strong> desarrollados completamente de cero, como aprendizaje o pruebas técnicas.</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                                    <div class="count-box">
+                                        <i class="bi bi-award"></i>
+                                        <div>
+                                            <span style="display:inline; margin:2.5%"> > </span>
+                                            <span style="display:inline; margin:-2.5%" data-purecounter-start="0"
+                                                  data-purecounter-end="50" data-purecounter-duration="0.25" class="purecounter">0</span>
+                                        </div>
+                                        <p><strong>Problemas</strong> resueltos en competencias de programación.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col" style="width:50%; text-align:right;">
-                <a href="Proyectos">
-                    <img class="picture-format" src="img/projects.png" width="100%" alt="Projects cover image">
-                </a>
+        </section>
+
+        <!-- Skills section -->
+        <section id="skills" class="skills section-bg">
+            <div class="container">
+                <div class="section-title">
+                    <h2><a href="pages/resume-es#skills">Habilidades</a></h2>
+                    <p>
+                        Con la combinación de mis estudios y experiencia, he adquirido un conjunto de habilidades que combina mi
+                        conocimento en matemáticas con competencias en desarrollo de software.
+                    </p>
+                </div>
+                <div class="row skills-content">
+                    <div class="col-lg-4">
+                        <div class="progress">
+                            <span class="skill">C#<i class="val">90%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress">
+                            <span class="skill">F#<i class="val">70%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="progress">
+                            <span class="skill">Python<i class="val">80%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress">
+                            <span class="skill">SQL<i class="val">75%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="progress">
+                            <span class="skill">Resolución de problemas<i class="val">90%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
+        </section>
+
+        <!-- Resume section -->
+        <section id="resume" class="resume section-bg">
+            <div class="container">
+                <div class="section-title">
+                    <h2><a href="pages/resume-es">Currículum</a></h2>
+                    <p>
+                        Profesional en matemáticas con facilidad y disposición para el aprendizaje. Tengo más de dos años de experiencia en programación
+                        orientación a objetos (usando lenguajes de .NET) y análisis de datos (con Python). Estoy interesado en el desarrollo de software,
+                        la investigación científica y la enseñanza de las matemáticas, así como el diseño digital y la ilustración.
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h3 class="resume-title">Experiencia Profesional</h3>
+                        <div class="resume-item">
+                            <h4>Líder de Desarrollo (Soporte y mantenimiento)</h4>
+                            <h5>Mayo 2023 - Actualmente</h5>
+                            <p>
+                                <strong>
+                                    <a href="https://www.linkedin.com/company/finac-finanzas-y-actuar%C3%ADa" target="_blank">
+                                        Finanzas y Actuaría (Finac S.A.S)
+                                    </a>,
+                                </strong>
+                                <em>Bogotá D.C., Colombia.</em>
+                            </p>
+                            <p>
+                                Además de las tareas de desarrollo, estoy a cargo de monitorear las actividades realizadas por los miembros del equipo
+                                y planificar y administrar los recursos del equipo de manera efectiva.
+                            </p>
+                        </div>
+
+                        <div class="resume-item">
+                            <h4>Profesional II de Desarrollo - Productos de Software</h4>
+                            <h5>Enero 2023 - Mayo 2023</h5>
+                            <p>
+                                <strong>
+                                    <a href="https://www.linkedin.com/company/finac-finanzas-y-actuar%C3%ADa" target="_blank">
+                                        Finanzas y Actuaría (Finac S.A.S)
+                                    </a>,
+                                </strong>
+                                <em>Bogotá D.C., Colombia.</em>
+                            </p>
+                        </div>
+
+                        <div class="resume-item">
+                            <h4>Analista de Desarrollo</h4>
+                            <h5>Noviembre 2020 - Diciembre 2022</h5>
+                            <p>
+                                <strong>
+                                    <a href="https://www.linkedin.com/company/finac-finanzas-y-actuar%C3%ADa" target="_blank">
+                                        Finanzas y Actuaría (Finac S.A.S)
+                                    </a>,
+                                </strong>
+                                <em>Bogotá D.C., Colombia.</em>
+                            </p>
+                            <p>
+                                Análisis, estimación, diseño e implementación de soluciones de desarrollo de software (Winforms y ASP.NET) para las aplicaciones
+                                de la compañía, haciendo uso de tecnologías .NET, (C#, F#, VB), SQL Server, Servicios SOAP (WCF), WPF, API Rest, DevExpress, etc.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <h3 class="resume-title">Educación</h3>
+                        <div class="resume-item">
+                            <h4>Pregrado en Matemáticas</h4>
+                            <h5>Enero 2014 - Mayo 2020</h5>
+                            <p>
+                                <a href="https://www.usergioarboleda.edu.co/" target="_blank"><em>Universidad Sergio Arboleda</em></a>
+                                <em>, Bogotá D.C., Colombia.</em><br>
+                                <a href="files/thesis.pdf" target="_blank"><strong>Tesis (honorífica):</strong></a>
+                                Characterizing Dual Graphs Associated to Triangulations of the Caracol Flow Polytope.
+                            </p>
+                        </div>
+
+                        <div class="resume-item">
+                            <h4>Otros Cursos de Certificación</h4>
+                            <p>
+                                <ul>
+                                    <li>
+                                        <strong>HTML, JavaScript and Services</strong>,
+                                        <em><a href="https://www.linkedin.com/company/ittalent-learning-solutions" target="_blank">ITTalent</a>, Bogotá D.C., Colombia.</em> Agosto 2022.
+                                    </li>
+                                    <li>
+                                        <strong>Learn Python & Ethical hacking from scratch</strong>,
+                                        <em><a href="https://www.udemy.com" target="_blank">Udemy</a>, Online.</em> Febrero 2020.
+                                    </li>
+                                </ul>
+                            </p>
+                        </div>
+
+                        <h3 class="resume-title">Publicaciones</h3>
+                        <div class="resume-item">
+                            <a href="https://arxiv.org/abs/2101.10425v2" target="_blank">
+                                <h4>A unifying framework for the ν-Tamari lattice and principal order ideals in Young's lattice</h4>
+                            </a>
+                            <h5>Enviado en Febrero 2021</h5>
+                            <p><em>Revista <a href="https://www.springer.com/journal/493" target="_blank">Combinatorica</a>, Springer.</em></p>
+                        </div>
+
+                        <div class="resume-item">
+                            <a href="https://www.mat.univie.ac.at/~slc/wpapers/FPSAC2021/42" target="_blank">
+                                <h4>On Framed Triangulations of Flow Polytopes, the ν-Tamari Lattice and Young's Lattice</h4>
+                            </a>
+                            <h5>Enviado en Diciembre 2020</h5>
+                            <p>
+                                <a href="https://www.biu.ac.il/en" target="_blank">Bar Ilan University</a>, Ramat Gan, Israel.<br>
+                                <em>Séminaire Lotharingien de Combinatoire, Memorias FPSAC 2021, Art. 42, 12 pp.</em>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects section -->
+        <section id="projects" class="projects section-bg">
+            <div class="container">
+                <div class="section-title">
+                    <h2><a href="pages/projects-es">Proyectos</a></h2>
+                    <p>
+                        Tengo una variedad de diferentes proyectos (en su mayoría personales):
+                        desde desarrollo de software/videojuegos y matemáticas hasta algunas cosas en diseño gráfico e ilustración.
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
+                        <div class="icon-box">
+                            <div class="icon"><i class="bx bx-laptop"></i></div>
+                            <h4 class="title"><a href="pages/programming-es">Algo de programación</a></h4>
+                            <p class="description">Además de mi trabajo, a veces paso mi tiempo haciendo mis propios retos de desarrollo.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
+                        <div class="icon-box">
+                            <div class="icon"><i class="bx bxs-color-fill"></i></div>
+                            <h4 class="title"><a href="pages/gallery-es">Ilustraciones y diseño</a></h4>
+                            <p class="description">Durante mucho tiempo una de mis mayores aficiones ha sido la ilustración.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
+                        <div class="icon-box">
+                            <div class="icon"><i class="bx bx-file"></i></div>
+                            <h4 class="title"><a href="pages/academic-es">Respecto a lo académico</a></h4>
+                            <p class="description">Cuando era estudiante, participé en algunos proyectos de investigación asociados con mi tesis de pregrado.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
 
     <footer class="border-top footer text-muted">
         <div class="container">
             <div class="row vertical-separated">
                 <div class="col-1" style="width:30%; text-align:left;">
                     <p>
-                        Alojado por <a href="https://github.com/">GitHub</a><br>
-                        <a href="index">en</a>-<a href="index-es">es</a>
+                        Alojado por <a href="https://github.com/" target="_blank">GitHub</a><br>
+                        <a href="index">en</a>-<a href="">es</a>
                     </p>
                 </div>
                 <div class="col" style="width:70%; text-align:right;">
                     <p style="text-align:right">
-                        El uso de este sitio significa la aceptación de los <a href="Terminos">Términos de uso</a><br>
-                        Copyright &copy; 2022 Francisco A. Mayorga Cetina<br>
+                        El uso de este sitio significa la aceptación de los <a href="terms-of-use-es">Términos de uso</a><br>
+                        Copyright &copy; 2023 Francisco A. Mayorga Cetina<br>
                         Contacto: <a href="mailto:contact.maycet@gmail.com">contact.maycet@gmail.com</a>
                     </p>
                 </div>
             </div>
         </div>
     </footer>
-    <script src="lib/jquery/dist/jquery.min.js"></script>
-    <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/site.js"></script>
+
+    <a href="" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Third party JS files -->
+    <script src="lib/purecounter/purecounter_vanilla.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/glightbox/js/glightbox.min.js"></script>
+    <script src="lib/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="lib/swiper/swiper-bundle.min.js"></script>
+    <script src="lib/waypoints/noframework.waypoints.js"></script>
+    <script src="lib/php-email-form/validate.js"></script>
+
+    <!-- Template main JS file -->
+    <script src="js/main.js"></script>
+
 </body>
 </html>

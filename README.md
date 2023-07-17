@@ -1,2 +1,2 @@
-This is my first personal web page.
-I'm trying to improve it.
+This is second version of my personal web page.
+I'm constantly working on trying to improve it.
