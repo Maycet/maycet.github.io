@@ -830,3 +830,24 @@ footer {
     border-radius: 0.5em;
     box-shadow: 0 0 1em -0.25em #C99FC4;
 }
+
+.btn:focus {
+    box-shadow: none !important;
+}
+
+.btn-outline-primary {
+    border-color: #804779;
+    color: #804779;
+}
+
+    .btn-outline-primary:hover {
+        background-color: #C99FC4;
+        border-color: #804779;
+        color: #804779;
+    }
+
+    .btn-outline-primary:active {
+        background-color: #94618E;
+        border-color: #804779;
+        color: #804779;
+    }
