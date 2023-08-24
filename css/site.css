@@ -631,7 +631,7 @@ section {
     margin-bottom: 30px;
 }
 
-.portfolio #portfolio-flters {
+.portfolio #portfolio-filter {
     padding: 0;
     margin: 0 auto 35px auto;
     list-style: none;
@@ -642,7 +642,7 @@ section {
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.08);
 }
 
-    .portfolio #portfolio-flters li {
+    .portfolio #portfolio-filter li {
         cursor: pointer;
         display: inline-block;
         padding: 10px 15px 8px 15px;
@@ -650,17 +650,17 @@ section {
         font-weight: 600;
         line-height: 1;
         text-transform: uppercase;
-        color: #5A656E;
+        color: #C99FC4;
         margin-bottom: 5px;
         transition: all 0.3s ease-in-out;
     }
 
-        .portfolio #portfolio-flters li:hover,
-        .portfolio #portfolio-flters li.filter-active {
+        .portfolio #portfolio-filter li:hover,
+        .portfolio #portfolio-filter li.filter-active {
             color: #94618E;
         }
 
-        .portfolio #portfolio-flters li:last-child {
+        .portfolio #portfolio-filter li:last-child {
             margin-right: 0;
         }
 
@@ -673,7 +673,7 @@ section {
 
     .portfolio .portfolio-wrap::before {
         content: "";
-        background: rgba(44, 73, 100, 0.6);
+        background: #804779AA;
         position: absolute;
         left: 30px;
         right: 30px;
@@ -684,7 +684,7 @@ section {
         opacity: 0;
     }
 
-    .portfolio .portfolio-wrap .portfolio-info {
+    .portfolio .portfolio-wrap .portfolio-links {
         opacity: 0;
         position: absolute;
         top: 10%;
@@ -693,6 +693,7 @@ section {
         text-align: center;
         z-index: 3;
         transition: all ease-in-out 0.3s;
+        font-weight: 600;
     }
 
         .portfolio .portfolio-wrap .portfolio-info h4 {
@@ -702,12 +703,11 @@ section {
         }
 
         .portfolio .portfolio-wrap .portfolio-info p {
-            color: #ffffff;
+            color: #FFF;
             font-size: 16px;
-            text-transform: uppercase;
         }
 
-    .portfolio .portfolio-wrap .portfolio-links {
+    .portfolio .portfolio-wrap .portfolio-info {
         opacity: 0;
         left: 0;
         right: 0;
@@ -726,48 +726,36 @@ section {
             transition: 0.3s;
         }
 
-            .portfolio .portfolio-wrap .portfolio-links a:hover {
-                color: #e684ae;
-            }
-
     .portfolio .portfolio-wrap:hover::before {
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
         opacity: 1;
-    }
-
-    .portfolio .portfolio-wrap:hover .portfolio-info {
-        opacity: 1;
-        top: calc(50% - 48px);
+        border-radius: 0.5em;
     }
 
     .portfolio .portfolio-wrap:hover .portfolio-links {
         opacity: 1;
+        top: calc(50% - 48px);
+    }
+
+    .portfolio .portfolio-wrap:hover .portfolio-info {
+        opacity: 1;
         bottom: calc(50% - 50px);
+    }
+
+    .portfolio .portfolio-wrap:hover .portfolio-info a {
+        color: #FFF;
+    }
+
+    .portfolio .portfolio-wrap:hover .portfolio-info a:hover {
+        color: #C99FC4;
     }
 
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
-.contact .contact-about h3 {
-    font-size: 36px;
-    margin: 0 0 10px 0;
-    padding: 0;
-    line-height: 1;
-    font-weight: 300;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: #94618E;
-}
-
-.contact .contact-about p {
-    font-size: 16px;
-    line-height: 24px;
-    font-family: "Exo 2", sans-serif;
-    color: #3c6387;
-}
 
 .contact .social-links {
     padding-bottom: 20px;
@@ -794,21 +782,12 @@ section {
             color: #FFF;
         }
 
-.contact .info {
-    color: #5A656E;
+.contact .info i {
+    font-size: 32px;
+    color: #94618E;
+    line-height: 0;
+    margin-right: 15px;
 }
-
-    .contact .info i {
-        font-size: 32px;
-        color: #94618E;
-        line-height: 0;
-        margin-right: 15px;
-    }
-
-    .contact .info p {
-        font-size: 16px;
-        margin: 0;
-    }
 
 /*--------------------------------------------------------------
 # Footer
@@ -850,4 +829,11 @@ footer {
         background-color: #94618E;
         border-color: #804779;
         color: #804779;
+    }
+
+    .portfolio-image {
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        padding-bottom: 100%; /* Para mantener la relación de aspecto 1:1 */
     }
