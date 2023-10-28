@@ -41,14 +41,14 @@
                         <a><span>Navegar</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
                             <li><a class="nav-link scrollto" href="">Inicio</a></li>
-                            <li><a class="nav-link scrollto" href="#about">Sobre mí</a></li>
-                            <li><a class="nav-link scrollto" href="#resume">Currículum</a></li>
+                            <li><a class="nav-link scrollto" href="site/about">Sobre mí</a></li>
+                            <li><a class="nav-link scrollto" href="site/resume">Currículum</a></li>
                             <li class="dropdown">
-                                <a href="#projects"><span>Proyectos</span></a>
+                                <a class="nav-link scrollto" href="#projects"><span>Proyectos</span></a>
                                 <ul>
-                                    <li><a href="site/projects/programming">Programación</a></li>
-                                    <li><a href="site/projects/gallery">Ilustración</a></li>
                                     <li><a href="site/projects/math">Matemáticas</a></li>
+                                    <li><a href="site/projects/gallery">Ilustración</a></li>
+                                    <li><a href="site/projects/programming">Programación</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -174,6 +174,44 @@
             </div>
         </section>
 
+        <!-- Projects section -->
+        <section id="projects" class="projects section-bg">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Proyectos</h2>
+                    <p>
+                        Tengo una variedad de diferentes proyectos (en su mayoría personales):
+                        desde desarrollo de software/videojuegos y matemáticas hasta algunas cosas en diseño gráfico e ilustración.
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
+                        <div class="icon-box">
+                            <div class="icon"><i class="bx bx-file"></i></div>
+                            <h4 class="title"><a href="site/projects/math">Respecto a lo académico</a></h4>
+                            <p class="description">Cuando era estudiante, participé en algunos proyectos de investigación asociados con mi tesis de pregrado.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
+                        <div class="icon-box">
+                            <div class="icon"><i class="bx bxs-color-fill"></i></div>
+                            <h4 class="title"><a href="site/projects/gallery">Ilustraciones y diseño</a></h4>
+                            <p class="description">Durante mucho tiempo una de mis mayores aficiones ha sido la ilustración.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
+                        <div class="icon-box">
+                            <div class="icon"><i class="bx bx-laptop"></i></div>
+                            <h4 class="title"><a href="site/projects/programming">Algo de programación</a></h4>
+                            <p class="description">Además de mi trabajo, a veces paso mi tiempo haciendo mis propios retos de desarrollo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Resume section -->
         <section id="resume" class="resume section-bg">
             <div class="container">
@@ -189,8 +227,22 @@
                     <div class="col-lg-6">
                         <h3 class="resume-title">Experiencia Profesional</h3>
                         <div class="resume-item">
+                            <h4>Coordinador de Desarrollo</h4>
+                            <h5>Septiembre 2023 - Actualmente</h5>
+                            <p>
+                                <strong>
+                                    <a href="https://www.linkedin.com/company/finac-finanzas-y-actuar%C3%ADa" target="_blank">Finanzas y Actuaría (Finac S.A.S)</a>,
+                                </strong>
+                                <em>Bogotá D.C., Colombia.</em>
+                            </p>
+                            <p>
+                                Líder del equipo de desarrollo para el área de soporte y mantenimiento.
+                            </p>
+                        </div>
+
+                        <div class="resume-item">
                             <h4>Developer II (Desarrollador .NET Senior)</h4>
-                            <h5>Agosto 2023 - Actualmente</h5>
+                            <h5>Agosto 2023 - Septiembre 2023</h5>
                             <p>
                                 <strong>
                                     <a href="https://www.linkedin.com/company/sii-group-colombia" target="_blank">Sii Group Colombia</a>
@@ -205,8 +257,8 @@
                         </div>
 
                         <div class="resume-item">
-                            <h4>Líder de Desarrollo (Soporte y mantenimiento)</h4>
-                            <h5>Mayo 2023 - Agosto 2023</h5>
+                            <h4>Profesional II de Desarrollo - Productos de Software</h4>
+                            <h5>Enero 2023 - Agosto 2023</h5>
                             <p>
                                 <strong>
                                     <a href="https://www.linkedin.com/company/finac-finanzas-y-actuar%C3%ADa" target="_blank">Finanzas y Actuaría (Finac S.A.S)</a>,
@@ -216,17 +268,6 @@
                             <p>
                                 Además de las tareas de desarrollo, estoy a cargo de monitorear las actividades realizadas por los miembros del equipo
                                 y planificar y administrar los recursos del equipo de manera efectiva.
-                            </p>
-                        </div>
-
-                        <div class="resume-item">
-                            <h4>Profesional II de Desarrollo - Productos de Software</h4>
-                            <h5>Enero 2023 - Mayo 2023</h5>
-                            <p>
-                                <strong>
-                                    <a href="https://www.linkedin.com/company/finac-finanzas-y-actuar%C3%ADa" target="_blank">Finanzas y Actuaría (Finac S.A.S)</a>,
-                                </strong>
-                                <em>Bogotá D.C., Colombia.</em>
                             </p>
                         </div>
 
@@ -293,44 +334,6 @@
                                 <a href="https://www.biu.ac.il/en" target="_blank">Bar Ilan University</a>, Ramat Gan, Israel.<br>
                                 <em>Séminaire Lotharingien de Combinatoire, Memorias FPSAC 2021, Art. 42, 12 pp.</em>
                             </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects section -->
-        <section id="projects" class="projects section-bg">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Proyectos</h2>
-                    <p>
-                        Tengo una variedad de diferentes proyectos (en su mayoría personales):
-                        desde desarrollo de software/videojuegos y matemáticas hasta algunas cosas en diseño gráfico e ilustración.
-                    </p>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
-                        <div class="icon-box">
-                            <div class="icon"><i class="bx bx-laptop"></i></div>
-                            <h4 class="title"><a href="site/projects/programming">Algo de programación</a></h4>
-                            <p class="description">Además de mi trabajo, a veces paso mi tiempo haciendo mis propios retos de desarrollo.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
-                        <div class="icon-box">
-                            <div class="icon"><i class="bx bxs-color-fill"></i></div>
-                            <h4 class="title"><a href="site/projects/gallery">Ilustraciones y diseño</a></h4>
-                            <p class="description">Durante mucho tiempo una de mis mayores aficiones ha sido la ilustración.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
-                        <div class="icon-box">
-                            <div class="icon"><i class="bx bx-file"></i></div>
-                            <h4 class="title"><a href="site/projects/math">Respecto a lo académico</a></h4>
-                            <p class="description">Cuando era estudiante, participé en algunos proyectos de investigación asociados con mi tesis de pregrado.</p>
                         </div>
                     </div>
                 </div>
