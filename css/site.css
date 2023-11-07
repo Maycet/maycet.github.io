@@ -3,22 +3,23 @@
 --------------------------------------------------------------*/
 body {
     font-family: "Exo 2", sans-serif;
-    color: #5A656E;
+    color: #BFBFBF;
+    background: #1E1E1E;
 }
 
 a {
-    color: #94618E;
+    color: #A032C8;
     text-decoration: none;
 }
 
     a:hover {
-        color: #804779;
+        color: #CB3FFF;
         text-decoration: none;
     }
 
 h1,
 h2 {
-    color: #94618E;
+    color: #A032C8;
     font-family: "Exo 2", sans-serif;
 }
 
@@ -41,7 +42,8 @@ h6 {
     right: 15px;
     bottom: 15px;
     z-index: 9999;
-    background: #94618E;
+    background: #782696;
+    color: #A7A7A7;
     width: 40px;
     height: 40px;
     border-radius: 50px;
@@ -50,13 +52,13 @@ h6 {
 
     .back-to-top i {
         font-size: 24px;
-        color: #FFF;
+        /* color: #BFBFBF; */
         line-height: 0;
     }
 
     .back-to-top:hover {
-        background: #804779;
-        color: #FFF;
+        background: #A032C8;
+        color: #FFFFFF;
     }
 
     .back-to-top.active {
@@ -72,8 +74,8 @@ h6 {
     z-index: 997;
     transition: all 0.5s;
     height: 60px;
-    background: #FFF;
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.12);
+    background: #1E1E1E;
+    box-shadow: 0px 0px 2px 0px #A7A7A7;
 }
 
     #header .logo h1 {
@@ -88,7 +90,7 @@ h6 {
 
         #header .logo h1 a,
         #header .logo h1 a:hover {
-            color: #94618E;
+            color: #5A1C71;
             text-decoration: none;
         }
 
@@ -131,7 +133,7 @@ h6 {
         justify-content: center;
         padding: 10px 0 10px 30px;
         font-size: 16px;
-        color: #94618E;
+        color: #A7A7A7;
         white-space: nowrap;
         transition: 0.3s;
     }
@@ -147,7 +149,7 @@ h6 {
         .navbar .active,
         .navbar .active:focus,
         .navbar li:hover > a {
-            color: #94618E;
+            color: #CB3FFF;
         }
 
     .navbar .dropdown ul {
@@ -160,8 +162,8 @@ h6 {
         z-index: 99;
         opacity: 0;
         visibility: hidden;
-        background: #FFF;
-        box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+        background: #262626;
+        box-shadow: 0px 0px 2px 0px #A7A7A7;
         transition: 0.3s;
         border-radius: 4px;
     }
@@ -182,7 +184,7 @@ h6 {
             .navbar .dropdown ul a:hover,
             .navbar .dropdown ul .active:hover,
             .navbar .dropdown ul li:hover > a {
-                color: #94618E;
+                color: #CB3FFF;
             }
 
     .navbar .dropdown:hover > ul {
@@ -219,7 +221,7 @@ h6 {
 #intro {
     width: 100%;
     height: 100vh;
-    background: url("../img/bg_purple.jpg") center center no-repeat;
+    background: url("../img/bg_purple.png") center center no-repeat;
     background-size: cover;
     padding: 0 15px;
 }
@@ -229,11 +231,11 @@ h6 {
         font-size: 48px;
         font-weight: 700;
         line-height: 56px;
-        color: #94618E;
+        color: #FFFFFF;
     }
 
     #intro h2 {
-        color: #94618E;
+        color: #FFFFFF;
         margin-bottom: 10px;
         font-size: 24px;
         font-weight: 500;
@@ -243,13 +245,13 @@ h6 {
     #intro .btn-get-started {
         font-size: 64px;
         transition: 0.5s;
-        color: #C99FC4;
+        color: #BFBFBF;
         height: 60px;
     }
 
         #intro .btn-get-started:hover {
             padding-top: 10px;
-            color: #94618E;
+            color: #CB3FFF;
         }
 
 @media (min-width: 1024px) {
@@ -278,10 +280,6 @@ section {
     padding: 60px 0;
 }
 
-.section-bg {
-    background: linear-gradient(180deg, #EEE7ED 0%, #FFF 100%);
-}
-
 .section-title {
     padding-bottom: 30px;
 }
@@ -292,7 +290,7 @@ section {
         margin-bottom: 15px;
         padding-bottom: 15px;
         position: relative;
-        color: #94628E;
+        color: #A032C8;
     }
 
         .section-title h2::after {
@@ -301,7 +299,7 @@ section {
             display: block;
             width: 50px;
             height: 3px;
-            background: #94618E;
+            background: #A032C8;
             bottom: 0;
             left: 0;
         }
@@ -315,7 +313,7 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
     padding: 15px 0;
-    background-color: #FCEAF9;
+    background-color: #262626;
     min-height: 40px;
 }
 
@@ -340,7 +338,7 @@ section {
             .breadcrumbs ol li + li::before {
                 display: inline-block;
                 padding-right: 10px;
-                color: #6c757d;
+                color: #A032C8;
                 content: "/";
             }
 
@@ -368,7 +366,7 @@ section {
     .about .content h3 {
         font-weight: 500;
         font-size: 34px;
-        color: #94618E;
+        color: #782696;
     }
 
     .about .content p {
@@ -383,7 +381,7 @@ section {
         .about .content .count-box i {
             display: block;
             font-size: 36px;
-            color: #94618E;
+            color: #A032C8;
             float: left;
             line-height: 0;
         }
@@ -393,7 +391,7 @@ section {
             line-height: 20px;
             display: block;
             font-weight: 700;
-            color: #94618E;
+            /* color: #BFBFBF; */
             margin-left: 50px;
             font-family: "Exo 2", sans-serif;
         }
@@ -403,21 +401,21 @@ section {
             margin: 0 0 0 50px;
             font-family: "Exo 2", sans-serif;
             font-size: 16px;
-            color: #94628E;
+            /* color: #BFBFBF; */
         }
 
         .about .content .count-box a {
             font-weight: 600;
             display: block;
             margin-top: 20px;
-            color: #94628E;
+            color: #A032C8;
             font-size: 15px;
             font-family: "Exo 2", sans-serif;
             transition: ease-in-out 0.3s;
         }
 
             .about .content .count-box a:hover {
-                color: #C99FC4;
+                color: #CB3FFF;
             }
 
 .about .image {
@@ -458,7 +456,7 @@ section {
         display: block;
         font-weight: 600;
         font-family: "Exo 2", sans-serif;
-        color: #94618E;
+        /* color: #BFBFBF; */
     }
 
         .skills .progress .skill .val {
@@ -467,14 +465,14 @@ section {
         }
 
 .skills .progress-bar-wrap {
-    background: #C99FC4;
+    background: #696969;
 }
 
 .skills .progress-bar {
     width: 1px;
     height: 10px;
     transition: 0.9s;
-    background-color: #804779;
+    background-color: #A032C8;
 }
 
 /*--------------------------------------------------------------
@@ -485,14 +483,14 @@ section {
     font-weight: 500;
     margin-top: 20px;
     margin-bottom: 20px;
-    color: #804779;
+    color: #FFFFFF;
     font-family: "Exo 2", sans-serif;
 }
 
 .resume .resume-item {
     padding: 0 0 20px 20px;
     margin-top: -2px;
-    border-left: 2px solid #94618E;
+    border-left: 2px solid #782696;
     position: relative;
 }
 
@@ -500,14 +498,14 @@ section {
         line-height: 18px;
         font-size: 18px;
         font-weight: 600;
-        color: #94618E;
+        /* color: #A032C8; */
         margin-bottom: 10px;
     }
 
     .resume .resume-item h5 {
         font-size: 16px;
-        background: #C99FC4;
-        color: #FFF;
+        background: #3B3B3B;
+        color: #A7A7A7;
         padding: 5px 15px;
         display: inline-block;
         font-weight: 400;
@@ -535,8 +533,8 @@ section {
         border-radius: 50px;
         left: -9px;
         top: 0;
-        background: #FFF;
-        border: 2px solid #94618E;
+        background: #5A1C71;
+        border: 2px solid #A032C8;
     }
 
 /*--------------------------------------------------------------
@@ -546,8 +544,8 @@ section {
     padding: 20px 15px;
     position: relative;
     overflow: hidden;
-    background: #FFF;
-    box-shadow: 0 0 1em -0.25em #C99FC4;
+    background: #333333;
+    box-shadow: 0px 0px 2px 0px #A7A7A7;
     transition: all 0.3s ease-in-out;
     border-radius: 0.5em;
     text-align: center;
@@ -566,7 +564,7 @@ section {
     }
 
     .projects .icon-box:hover::before {
-        background: #94618E;
+        background: #782696;
         height: 100%;
         border-radius: 0px;
     }
@@ -579,14 +577,14 @@ section {
     border-radius: 50%;
     width: 60px;
     height: 60px;
-    background: #94618E;
+    background: #A7A7A7;
     transition: all 0.3s ease-in-out;
 }
 
     .projects .icon i {
         font-size: 36px;
         line-height: 1;
-        color: #FFF;
+        color: #782696;
     }
 
 .projects .title {
@@ -596,7 +594,7 @@ section {
 }
 
     .projects .title a {
-        color: #111;
+        color: #BFBFBF;
     }
 
 .projects .description {
@@ -607,15 +605,15 @@ section {
 
 .projects .icon-box:hover .title a,
 .projects .icon-box:hover .description {
-    color: #FFF;
+    color: #FFFFFF;
 }
 
 .projects .icon-box:hover .icon {
-    background: #FFF;
+    background: #FFFFFF;
 }
 
     .projects .icon-box:hover .icon i {
-        color: #94618E;
+        color: #A032C8;
     }
 
 @media (max-width: 768px) {
@@ -636,10 +634,10 @@ section {
     margin: 0 auto 35px auto;
     list-style: none;
     text-align: center;
-    background: #FFF;
+    background: #262626;
     border-radius: 50px;
     padding: 2px 15px;
-    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 0px 2px 0px #A7A7A7;
 }
 
     .portfolio #portfolio-filter li {
@@ -650,14 +648,14 @@ section {
         font-weight: 600;
         line-height: 1;
         text-transform: uppercase;
-        color: #C99FC4;
+        color: #782696;
         margin-bottom: 5px;
         transition: all 0.3s ease-in-out;
     }
 
         .portfolio #portfolio-filter li:hover,
         .portfolio #portfolio-filter li.filter-active {
-            color: #94618E;
+            color: #CB3FFF;
         }
 
         .portfolio #portfolio-filter li:last-child {
@@ -673,7 +671,7 @@ section {
 
     .portfolio .portfolio-wrap::before {
         content: "";
-        background: #804779AA;
+        background: #333333DD;
         position: absolute;
         left: 30px;
         right: 30px;
@@ -698,12 +696,12 @@ section {
 
         .portfolio .portfolio-wrap .portfolio-info h4 {
             font-size: 20px;
-            color: #FFF;
+            /* color: #1E1E1E; */
             font-weight: 600;
         }
 
         .portfolio .portfolio-wrap .portfolio-info p {
-            color: #FFF;
+            /* color: #1E1E1E; */
             font-size: 16px;
         }
 
@@ -719,7 +717,7 @@ section {
     }
 
         .portfolio .portfolio-wrap .portfolio-links a {
-            color: #FFF;
+            color: #FFFFFF;
             margin: 0 2px;
             font-size: 28px;
             display: inline-block;
@@ -746,11 +744,11 @@ section {
     }
 
     .portfolio .portfolio-wrap:hover .portfolio-info a {
-        color: #FFF;
+        color: #FFFFFF;
     }
 
     .portfolio .portfolio-wrap:hover .portfolio-info a:hover {
-        color: #C99FC4;
+        color: #CB3FFF;
     }
 
 /*--------------------------------------------------------------
@@ -761,30 +759,9 @@ section {
     padding-bottom: 20px;
 }
 
-    .contact .social-links a {
-        font-size: 18px;
-        display: inline-block;
-        background: #FFF;
-        color: #94618E;
-        line-height: 0;
-        padding: 8px 0;
-        margin-right: 4px;
-        border-radius: 50%;
-        text-align: center;
-        width: 36px;
-        height: 36px;
-        transition: 0.3s;
-        border: 1px solid #94618E;
-    }
-
-        .contact .social-links a:hover {
-            background: #94618E;
-            color: #FFF;
-        }
-
 .contact .info i {
     font-size: 32px;
-    color: #94618E;
+    color: #A032C8;
     line-height: 0;
     margin-right: 15px;
 }
@@ -807,7 +784,7 @@ footer {
 
 .picture-format {
     border-radius: 0.5em;
-    box-shadow: 0 0 1em -0.25em #C99FC4;
+    box-shadow: 0px 0px 2px 0px #A7A7A7;
 }
 
 .btn:focus {
@@ -815,20 +792,20 @@ footer {
 }
 
 .btn-outline-primary {
-    border-color: #804779;
-    color: #804779;
+    border-color: #BFBFBF;
+    color: #BFBFBF;
 }
 
     .btn-outline-primary:hover {
-        background-color: #C99FC4;
-        border-color: #804779;
-        color: #804779;
+        background-color: #A032C8;
+        border-color: #FFFFFF;
+        color: #FFFFFF;
     }
 
     .btn-outline-primary:active {
-        background-color: #94618E;
-        border-color: #804779;
-        color: #804779;
+        background-color: #CB3FFF;
+        border-color: #FFFFFF;
+        color: #FFFFFF;
     }
 
     .portfolio-image {
@@ -837,3 +814,11 @@ footer {
         width: 100%;
         padding-bottom: 100%; /* Para mantener la relación de aspecto 1:1 */
     }
+    
+.bg-1 {
+    background: #262626;
+}
+
+.bg-2 {
+    background: #333333;
+}
