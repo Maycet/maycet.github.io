@@ -444,14 +444,15 @@ section {
 # Skills
 --------------------------------------------------------------*/
 .skills .progress {
-    height: 50px;
+    height: 60px;
     display: block;
     background: none;
+    margin: 25px;
 }
 
     .skills .progress .skill {
         padding: 10px 0;
-        margin: 0 0 6px 0;
+        margin: 0 0 1px 0;
         text-transform: uppercase;
         display: block;
         font-weight: 600;
@@ -466,13 +467,18 @@ section {
 
 .skills .progress-bar-wrap {
     background: #696969;
+    border-radius: 10px;
 }
 
 .skills .progress-bar {
     width: 1px;
-    height: 10px;
-    transition: 0.9s;
+    height: 15px;
+    transition: 1.25s;
     background-color: #A032C8;
+    border-radius: 10px;
+    border: 1.5px;
+    border-color: #782696;
+    border-style: solid;
 }
 
 /*--------------------------------------------------------------
