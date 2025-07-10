@@ -79,7 +79,7 @@
                 </h5>
                 <img class="picture-format" src="../../img/photos/franco.jpeg" width="50%" style="float: left;margin: 1px 25px 15px 1px;">
                 <p>
-                    Soy de Bogotá, Colombia, y actualmente tengo 26 años.
+                    Soy de Bogotá, Colombia, y actualmente tengo <span id="age"></span> años.
                 </p>
                 <p>
                     Completé mi pregrado en matemáticas en la Universidad Sergio Arboleda, donde tuve la oportunidad de trabajar en
@@ -143,6 +143,21 @@
 
     <!-- Template main JS file -->
     <script src="../../js/main.js"></script>
+    <script>
+        // Calcula la edad a partir de la fecha de nacimiento
+        (function() {
+            const birthDate = new Date(1997, 3, 8);
+            let today = new Date();
+            let ageInYears = today.getFullYear() - birthDate.getFullYear();
+            let monthDifference = today.getMonth() - birthDate.getMonth();
+            if (monthDifference < 0 ||
+                (monthDifference === 0 && today.getDate() < birthDate.getDate()))
+            {
+                ageInYears--;
+            }
+            document.getElementById('age').textContent = ageInYears;
+        })();
+    </script>
 
 </body>
 </html>
