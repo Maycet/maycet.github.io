@@ -493,6 +493,15 @@ section {
     font-family: "Exo 2", sans-serif;
 }
 
+.resume .resume-category {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 28px 0 18px;
+    color: #A7A7A7;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
 .resume .resume-item {
     padding: 0 0 20px 20px;
     margin-top: -2px;
