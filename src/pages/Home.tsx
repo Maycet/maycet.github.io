@@ -36,18 +36,10 @@ export default function Home() {
       {/* ─── Hero ─── */}
       <section
         id="intro"
-        className="relative min-h-screen flex flex-col items-center justify-center text-center pt-15"
-        style={{
-          backgroundImage: 'url(/img/bg_purple.jpg)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
+        style={{ background: 'radial-gradient(ellipse 100% 55% at 50% 0%, var(--hero-glow), transparent 70%), radial-gradient(ellipse 100% 40% at 50% 100%, var(--hero-glow), transparent 70%), var(--bg)' }}
+        className="min-h-screen flex flex-col items-center justify-center text-center pt-15 pb-15"
       >
-        <div
-          className="absolute inset-0"
-          style={{ background: 'var(--overlay)' }}
-        />
-        <div className="relative z-10 px-4">
+        <div className="px-4">
           <motion.h1
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -60,7 +52,7 @@ export default function Home() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4, duration: 0.8 }}
-            className="text-xl md:text-3xl text-[var(--text)] font-medium mb-10"
+            className="text-xl md:text-3xl font-medium mb-10 text-[var(--accent)]"
           >
             {t('hero.subtitle')}
           </motion.h2>
@@ -73,8 +65,7 @@ export default function Home() {
               e.preventDefault()
               document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })
             }}
-            style={{ borderColor: 'var(--accent)', color: 'var(--accent)' }}
-            className="inline-flex flex-col items-center gap-1 border-2 rounded-full px-6 py-3 hover:bg-[var(--accent)] hover:text-white transition-all duration-300"
+            className="inline-flex flex-col items-center gap-1 border-2 border-[var(--accent)] text-[var(--accent)] rounded-full px-6 py-3 hover:bg-[var(--accent)] hover:border-[var(--accent)] hover:text-white transition-all duration-300"
           >
             <Icon icon="mdi:chevron-double-down" width={28} className="animate-bounce" />
           </motion.a>

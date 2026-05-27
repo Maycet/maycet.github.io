@@ -12,7 +12,7 @@ export default function Footer() {
       style={{ borderTop: '1px solid var(--border)', background: 'var(--bg-secondary)' }}
       className="mt-auto"
     >
-      <div className="container py-6">
+      <div className="container pt-6 pb-20">
         <div className="flex flex-col md:flex-row justify-between gap-4 text-sm text-[var(--text-muted)]">
           <div>
             <p>

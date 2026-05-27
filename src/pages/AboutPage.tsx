@@ -34,22 +34,19 @@ export default function AboutPage() {
               {t('about.intro')}
             </p>
 
-            <div className="flex flex-col md:flex-row gap-8 items-start mb-6">
+            <div className="flex flex-col md:flex-row gap-8 items-start">
               <img
                 src="/img/photos/franco.jpeg"
                 alt="Francisco Mayorga"
-                className="w-full md:w-64 rounded-xl shadow-lg object-cover"
+                className="w-full md:w-64 flex-shrink-0 rounded-xl shadow-lg object-cover"
               />
               <div className="space-y-4 text-[var(--text)]">
                 <p dangerouslySetInnerHTML={{ __html: t('about.p1', { age }) }} />
                 <p dangerouslySetInnerHTML={{ __html: t('about.p2') }} />
+                <p dangerouslySetInnerHTML={{ __html: t('about.p3') }} />
+                <p dangerouslySetInnerHTML={{ __html: t('about.p4') }} />
+                <p dangerouslySetInnerHTML={{ __html: t('about.p5') }} />
               </div>
-            </div>
-
-            <div className="space-y-4 text-[var(--text)]">
-              <p dangerouslySetInnerHTML={{ __html: t('about.p3') }} />
-              <p dangerouslySetInnerHTML={{ __html: t('about.p4') }} />
-              <p dangerouslySetInnerHTML={{ __html: t('about.p5') }} />
             </div>
           </motion.div>
         </div>

@@ -5,7 +5,7 @@
   --bg: #F8F8F8;
   --bg-card: #FFFFFF;
   --bg-secondary: #EFEFEF;
-  --text: #1E1E1E;
+  --text: #555555;
   --text-muted: #666666;
   --accent: #A032C8;
   --accent-hover: #CB3FFF;
@@ -13,7 +13,9 @@
   --border: #E0E0E0;
   --shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   --header-bg: rgba(248, 248, 248, 0.95);
-  --overlay: rgba(255, 255, 255, 0.45);
+  --overlay: rgba(255, 255, 255, 0.88);
+  --overlay-text: #333333;
+  --hero-glow: rgba(160, 50, 200, 0.16);
 }
 
 [data-theme="dark"] {
@@ -28,7 +30,9 @@
   --border: #3B3B3B;
   --shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
   --header-bg: rgba(30, 30, 30, 0.95);
-  --overlay: rgba(30, 30, 30, 0.55);
+  --overlay: rgba(12, 12, 12, 0.88);
+  --overlay-text: #ffffff;
+  --hero-glow: rgba(160, 50, 200, 0.22);
 }
 
 /* ─── Tailwind theme tokens (inline = runtime CSS vars) ─── */
@@ -69,14 +73,16 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
 
-a {
-  color: var(--accent);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
+@layer base {
+  a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
 
-a:hover {
-  color: var(--accent-hover);
+  a:hover {
+    color: var(--accent-hover);
+  }
 }
 
 /* ─── Scrollbar ─── */
@@ -171,7 +177,8 @@ section {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .btn-accent {

@@ -74,8 +74,8 @@ export default function GalleryGrid({ items, labels }: GalleryGridProps) {
                 style={{ backgroundImage: `url(${item.src})` }}
               />
               <div className="portfolio-info">
-                <h5 className="font-semibold text-[var(--text)] mb-1">{item.title}</h5>
-                <p className="text-sm text-[var(--text-muted)]">{item.description}</p>
+                <h5 className="font-semibold mb-1" style={{ color: 'var(--accent)' }}>{item.title}</h5>
+                <p className="text-sm" style={{ color: 'var(--overlay-text)' }}>{item.description}</p>
               </div>
             </motion.div>
           ))}
