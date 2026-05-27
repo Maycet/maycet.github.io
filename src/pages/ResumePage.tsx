@@ -6,21 +6,19 @@ import SkillBar from '../components/ui/SkillBar'
 
 const fadeIn = { hidden: { opacity: 0, y: 16 }, visible: { opacity: 1, y: 0 } }
 
-function ResumeItem({
-  title,
-  period,
-  org,
-  orgHref,
-  location,
-  description,
-}: {
+type ResumeItemData = {
   title: string
   period: string
   org?: string
   orgHref?: string
   location?: string
-  description?: string | string[]
-}) {
+  description?: string
+}
+
+type CertData = { name: string; org: string; date: string }
+type EduData = { title: string; period: string; org: string; orgHref: string; location: string }
+
+function ResumeItem({ title, period, org, orgHref, location, description }: ResumeItemData) {
   return (
     <motion.div
       variants={fadeIn}
@@ -42,9 +40,7 @@ function ResumeItem({
         </p>
       )}
       {description && (
-        <p className="text-sm text-[var(--text-muted)] leading-relaxed">
-          {Array.isArray(description) ? description.join(' ') : description}
-        </p>
+        <p className="text-sm text-[var(--text-muted)] leading-relaxed">{description}</p>
       )}
     </motion.div>
   )
@@ -78,6 +74,12 @@ export default function ResumePage() {
   }))
 
   const skills = t('home.skills.items', { returnObjects: true }) as { name: string; value: number }[]
+  const devExp = t('resume.items.devExperience', { returnObjects: true }) as ResumeItemData[]
+  const teachExp = t('resume.items.teachExperience', { returnObjects: true }) as ResumeItemData[]
+  const edu = t('resume.items.education', { returnObjects: true }) as EduData
+  const certs = t('resume.items.certifications', { returnObjects: true }) as CertData[]
+  const publications = t('resume.items.publications', { returnObjects: true }) as ResumeItemData[]
+  const activities = t('resume.items.activities', { returnObjects: true }) as ResumeItemData[]
 
   return (
     <>
@@ -116,117 +118,22 @@ export default function ResumePage() {
               <SectionTitle>{t('resume.experience.title')}</SectionTitle>
 
               <CategoryTitle>{t('resume.experience.development')}</CategoryTitle>
-
-              <ResumeItem
-                title="Engineer III"
-                period="March 2026 - Present"
-                org="StoneX Group Inc."
-                orgHref="https://www.stonex.com/"
-                location="Bogotá D.C., Colombia"
-                description="Develop and implement .NET solutions with emphasis on backend services. Build robust applications leveraging .NET technologies, CI/CD pipelines, containerization, and observability tools. Apply engineering best practices using GitHub, Azure DevOps, and Azure cloud services."
-              />
-              <ResumeItem
-                title="Development Coordinator – Investments Team"
-                period="January 2025 - March 2026"
-                org="Finanzas y Actuaría (Finac S.A.S)"
-                orgHref="https://www.linkedin.com/company/finac-finanzas-y-actuar%C3%ADa"
-                location="Bogotá D.C., Colombia"
-                description="Lead the development of products related to investment instruments. Coordinate new cloud-based deployments and integration with enterprise identity systems. Provide customer-facing support and incident resolution."
-              />
-              <ResumeItem
-                title="Analytics Consultant"
-                period="July 2024 - December 2024"
-                org="CALA Analytics"
-                orgHref="https://www.linkedin.com/company/calaanalytics/"
-                location="Bogotá D.C., Colombia"
-                description="Implementation, documentation, and deployment of analytical tools using Python and SQL."
-              />
-              <ResumeItem
-                title="Development Coordinator – Maintenance and Support"
-                period="September 2023 - July 2024"
-                org="Finanzas y Actuaría (Finac S.A.S)"
-                orgHref="https://www.linkedin.com/company/finac-finanzas-y-actuar%C3%ADa"
-                location="Bogotá D.C., Colombia"
-                description="Supervise the maintenance development team. Manage resource allocation and task tracking through Azure DevOps. Lead software improvements based on WPF and .NET."
-              />
-              <ResumeItem
-                title="Developer II (Senior .NET Developer)"
-                period="August 2023 - September 2023"
-                org="Sii Group Colombia (Thales project)"
-                orgHref="https://www.linkedin.com/company/sii-group-colombia"
-                location="Bogotá D.C., Colombia"
-                description="Responsible for analyzing, designing, and implementing new features for applications, as well as maintaining or enhancing existing ones, with a focus on optimization, security, and promoting good development practices."
-              />
-              <ResumeItem
-                title="Development Professional II"
-                period="January 2023 - August 2023"
-                org="Finanzas y Actuaría (Finac S.A.S)"
-                orgHref="https://www.linkedin.com/company/finac-finanzas-y-actuar%C3%ADa"
-                location="Bogotá D.C., Colombia"
-                description="Guide junior developers and ensure timely project delivery. Develop WPF applications aligned with business needs."
-              />
-              <ResumeItem
-                title="Development Analyst"
-                period="November 2020 - December 2022"
-                org="Finanzas y Actuaría (Finac S.A.S)"
-                orgHref="https://www.linkedin.com/company/finac-finanzas-y-actuar%C3%ADa"
-                location="Bogotá D.C., Colombia"
-                description="Develop and maintain WinForms and ASP.NET applications. Design and develop REST and SOAP APIs. Work with SQL Server and Oracle databases."
-              />
+              {devExp.map((item, i) => <ResumeItem key={i} {...item} />)}
 
               <CategoryTitle>{t('resume.experience.teaching')}</CategoryTitle>
-
-              <ResumeItem
-                title="Adjunct Professor"
-                period="October 2025 - December 2025"
-                org="Universidad Sergio Arboleda"
-                orgHref="https://www.usergioarboleda.edu.co/"
-                location="Bogotá D.C., Colombia"
-                description="Scientific Computing – Teach theoretical and practical programming classes applied to mathematics."
-              />
-              <ResumeItem
-                title="Sergistas monitors group coordinator"
-                period="June 2018 - January 2020"
-                org="Sergio Arboleda University"
-                orgHref="https://www.usergioarboleda.edu.co/"
-                location="Bogotá D.C., Colombia"
-                description="Candidate selection, performance evaluation of monitors, and administrative and logistical management."
-              />
-              <ResumeItem
-                title='Continuing Education Teacher: "Talentos matemáticos" Program'
-                period="March 2019 - May 2019"
-                org="Sergio Arboleda University"
-                orgHref="https://www.usergioarboleda.edu.co/"
-                location="Bogotá D.C., Colombia"
-                description="Courses for students with high capacities for mathematics and technology."
-              />
-              <ResumeItem
-                title="Volunteer"
-                period="February 2019 - November 2020"
-                org="HAIKO Foundation"
-                orgHref="https://www.linkedin.com/company/fundacionhaiko"
-                location="Bogotá D.C., Colombia"
-                description="Teaching accompaniment in discrete Mathematics and Computational Thinking courses."
-              />
+              {teachExp.map((item, i) => <ResumeItem key={i} {...item} />)}
             </div>
 
             {/* RIGHT COLUMN */}
             <div>
               <SectionTitle>{t('resume.education.title')}</SectionTitle>
 
-              <ResumeItem
-                title="Bachelor of Mathematics"
-                period="January 2014 - May 2020"
-                org="Sergio Arboleda University"
-                orgHref="https://www.usergioarboleda.edu.co/"
-                location="Bogotá D.C., Colombia"
-                description=""
-              />
+              <ResumeItem {...edu} />
               <p className="text-sm text-[var(--text-muted)] -mt-4 mb-6 pl-4">
                 <a href="/files/thesis.pdf" target="_blank" rel="noopener noreferrer" className="text-[var(--accent)] hover:underline font-semibold">
-                  Thesis (honorific):
+                  {t('resume.thesis.label')}
                 </a>{' '}
-                Characterizing Dual Graphs Associated to Triangulations of the Caracol Flow Polytope.
+                {t('resume.thesis.title')}
               </p>
 
               <motion.div variants={fadeIn}>
@@ -234,22 +141,10 @@ export default function ResumePage() {
                   style={{ borderBottom: '2px solid var(--accent)' }}
                   className="text-sm font-bold uppercase tracking-wider text-[var(--text)] pb-2 mb-4"
                 >
-                  Another Certification Courses
+                  {t('resume.certifications.sectionTitle')}
                 </h4>
                 <ul className="space-y-2 text-sm text-[var(--text-muted)]">
-                  {[
-                    { name: 'Tech Career Skills: Moving from Developer to Engineering Manager', org: 'LinkedIn Learning', date: 'May 2026' },
-                    { name: 'React Development', org: 'Programming Hub', date: 'March 2026' },
-                    { name: 'Blazor - The Complete Guide [.NET 9] [2025] [E-commerce]', org: 'Udemy', date: 'January 2026' },
-                    { name: 'Exploring your DATAVERSE with IBM SPSS Modeler', org: 'Cala Academy', date: 'July 2024' },
-                    { name: 'B2 Upper Intermediate', org: 'EF SET English Certificate', date: 'August 2023' },
-                    { name: 'HTML, JavaScript and Services', org: 'ITTalent', date: 'August 2022' },
-                    { name: 'UI/UX Certification Course', org: 'Programming Hub', date: 'November 2021' },
-                    { name: 'Python 3 Certification Course', org: 'Programming Hub', date: 'August 2020' },
-                    { name: 'Python Advanced Certification Course', org: 'Programming Hub', date: 'August 2020' },
-                    { name: 'Python Certification Course', org: 'Programming Hub', date: 'August 2020' },
-                    { name: 'Learn Python & Ethical hacking from scratch', org: 'Udemy', date: 'February 2020' },
-                  ].map((c, i) => (
+                  {certs.map((c, i) => (
                     <li key={i} className="flex gap-2">
                       <Icon icon="mdi:check-circle-outline" className="text-[var(--accent)] flex-shrink-0 mt-0.5" />
                       <span>
@@ -263,48 +158,27 @@ export default function ResumePage() {
 
               <div className="mt-8">
                 <SectionTitle>{t('resume.publications.title')}</SectionTitle>
-                <ResumeItem
-                  title="A unifying framework for the ν-Tamari lattice and principal order ideals in Young's lattice"
-                  period="Published: June 2023"
-                  org="Combinatorica Journal, Springer"
-                  orgHref="https://link.springer.com/article/10.1007/s00493-023-00022-x"
-                />
-                <ResumeItem
-                  title="On Framed Triangulations of Flow Polytopes, the ν-Tamari Lattice and Young's Lattice"
-                  period="Final version: April 2021"
-                  org="Séminaire Lotharingien de Combinatoire, FPSAC 2021, Art. 42"
-                  orgHref="https://www.mat.univie.ac.at/~slc/wpapers/FPSAC2021/42"
-                  location="Bar Ilan University, Ramat Gan, Israel"
-                />
+                {publications.map((item, i) => <ResumeItem key={i} {...item} />)}
               </div>
 
               <div className="mt-8">
                 <SectionTitle>{t('resume.activities.title')}</SectionTitle>
-                <ResumeItem
-                  title="Regional Programming Marathon (South America North) ICPC"
-                  period="November 2019"
-                  org="Contestant, Grancolombian Polytechnic"
-                  orgHref="https://acis.org.co/portal/content/marat%C3%B3n-regional-latinoamericana-acm-icpc-2019"
-                />
-                <ResumeItem
-                  title="XXII Colombian Congress of Mathematics"
-                  period="June 2019"
-                  org="Speaker, University of Cauca, Popayán"
-                  orgHref="https://scm.org.co/ccm2019/"
-                  description=""
-                />
-                <p className="text-sm text-[var(--text-muted)] -mt-4 mb-6 pl-4">
-                  <a href="/files/poster_popayan.pdf" target="_blank" rel="noopener noreferrer" className="text-[var(--accent)] hover:underline font-semibold">
-                    Poster:
-                  </a>{' '}
-                  Flow polytopes and triangulations of the Caracol polytope.
-                </p>
-                <ResumeItem
-                  title="Cube Challenge Sergista"
-                  period="September 2018, April 2019"
-                  org="Organizer, Sergio Arboleda University"
-                  orgHref="https://www.worldcubeassociation.org/competitions/SergioArboleda2018"
-                />
+                {activities.map((item, i) => {
+                  const isCongressEntry = i === 1
+                  return (
+                    <div key={i}>
+                      <ResumeItem {...item} />
+                      {isCongressEntry && (
+                        <p className="text-sm text-[var(--text-muted)] -mt-4 mb-6 pl-4">
+                          <a href="/files/poster_popayan.pdf" target="_blank" rel="noopener noreferrer" className="text-[var(--accent)] hover:underline font-semibold">
+                            {t('resume.poster.label')}
+                          </a>{' '}
+                          {t('resume.poster.title')}
+                        </p>
+                      )}
+                    </div>
+                  )
+                })}
               </div>
             </div>
           </motion.div>

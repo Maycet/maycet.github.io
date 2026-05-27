@@ -69,13 +69,6 @@ export default function Header() {
           >
             {t('nav.about')}
           </Link>
-          <Link
-            to={`${base}/resume`}
-            className="text-[var(--text)] hover:text-[var(--accent)] transition-colors font-medium"
-          >
-            {t('nav.resume')}
-          </Link>
-
           {/* Projects dropdown */}
           <div className="relative" ref={dropdownRef}>
             <button
@@ -154,9 +147,6 @@ export default function Header() {
             </Link>
             <Link to={`${base}/about`} className="py-2 text-[var(--text)] hover:text-[var(--accent)] font-medium" onClick={() => setMobileOpen(false)}>
               {t('nav.about')}
-            </Link>
-            <Link to={`${base}/resume`} className="py-2 text-[var(--text)] hover:text-[var(--accent)] font-medium" onClick={() => setMobileOpen(false)}>
-              {t('nav.resume')}
             </Link>
             <div>
               <button

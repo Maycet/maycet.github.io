@@ -3,6 +3,8 @@ import { initReactI18next } from 'react-i18next'
 import en from './en'
 import es from './es'
 
+const initialLang = window.location.pathname.split('/')[1] === 'es' ? 'es' : 'en'
+
 i18n
   .use(initReactI18next)
   .init({
@@ -10,7 +12,7 @@ i18n
       en: { translation: en },
       es: { translation: es },
     },
-    lng: 'en',
+    lng: initialLang,
     fallbackLng: 'en',
     interpolation: { escapeValue: false },
   })
