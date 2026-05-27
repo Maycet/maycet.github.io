@@ -11,6 +11,7 @@ export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false)
   const [projectsOpen, setProjectsOpen] = useState(false)
   const navRef = useRef<HTMLDivElement>(null)
+  const dropdownRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50)
@@ -28,6 +29,17 @@ export default function Header() {
     document.addEventListener('mousedown', handleClick)
     return () => document.removeEventListener('mousedown', handleClick)
   }, [])
+
+  useEffect(() => {
+    if (!projectsOpen) return
+    const handleClick = (e: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
+        setProjectsOpen(false)
+      }
+    }
+    document.addEventListener('mousedown', handleClick)
+    return () => document.removeEventListener('mousedown', handleClick)
+  }, [projectsOpen])
 
   const otherLang = lang === 'es' ? 'en' : 'es'
   const base = `/${lang}`
@@ -65,7 +77,7 @@ export default function Header() {
           </Link>
 
           {/* Projects dropdown */}
-          <div className="relative">
+          <div className="relative" ref={dropdownRef}>
             <button
               onClick={() => setProjectsOpen(o => !o)}
               className="flex items-center gap-1 text-[var(--text)] hover:text-[var(--accent)] transition-colors font-medium cursor-pointer"

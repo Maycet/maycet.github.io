@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { BrowserRouter, Navigate, Route, Routes, useParams } from 'react-router-dom'
+import { BrowserRouter, Navigate, Route, Routes, useLocation, useParams } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { ThemeProvider } from './contexts/ThemeContext'
 import Header from './components/layout/Header'
@@ -11,6 +11,12 @@ import ResumePage from './pages/ResumePage'
 import GalleryPage from './pages/GalleryPage'
 import MathPage from './pages/MathPage'
 import TermsPage from './pages/TermsPage'
+
+function ScrollToTop() {
+  const { pathname } = useLocation()
+  useEffect(() => { window.scrollTo(0, 0) }, [pathname])
+  return null
+}
 
 function LangLayout() {
   const { lang } = useParams<{ lang: string }>()
@@ -26,6 +32,7 @@ function LangLayout() {
 
   return (
     <>
+      <ScrollToTop />
       <Header />
       <Routes>
         <Route index element={<Home />} />
