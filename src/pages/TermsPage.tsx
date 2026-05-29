@@ -1,18 +1,11 @@
 import { useTranslation } from 'react-i18next'
 import { motion } from 'framer-motion'
-import Breadcrumb from '../components/layout/Breadcrumb'
 
 export default function TermsPage() {
   const { t } = useTranslation()
 
-  const breadcrumbs = (t('terms.breadcrumb', { returnObjects: true }) as string[]).map((label, i) => ({
-    label,
-    href: i === 0 ? '/' : undefined,
-  }))
-
   return (
     <>
-      <Breadcrumb title={t('terms.pageTitle')} crumbs={breadcrumbs} />
       <main className="py-16 pt-20">
         <div className="container max-w-3xl">
           <motion.div

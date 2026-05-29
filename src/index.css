@@ -119,13 +119,6 @@ section {
   border-radius: 2px;
 }
 
-/* ─── Breadcrumb ─── */
-.breadcrumb-section {
-  background: var(--bg-secondary);
-  border-bottom: 1px solid var(--border);
-  padding: 12px 0;
-}
-
 /* ─── Progress bars ─── */
 .progress-bar-track {
   background: var(--bg-secondary);

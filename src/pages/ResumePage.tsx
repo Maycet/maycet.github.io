@@ -1,7 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import { motion } from 'framer-motion'
 import { Icon } from '@iconify/react'
-import Breadcrumb from '../components/layout/Breadcrumb'
 import SkillBar from '../components/ui/SkillBar'
 
 const fadeIn = { hidden: { opacity: 0, y: 16 }, visible: { opacity: 1, y: 0 } }
@@ -68,11 +67,6 @@ function CategoryTitle({ children }: { children: React.ReactNode }) {
 export default function ResumePage() {
   const { t } = useTranslation()
 
-  const breadcrumbs = (t('resume.breadcrumb', { returnObjects: true }) as string[]).map((label, i) => ({
-    label,
-    href: i === 0 ? '/' : undefined,
-  }))
-
   const skills = t('home.skills.items', { returnObjects: true }) as { name: string; value: number }[]
   const devExp = t('resume.items.devExperience', { returnObjects: true }) as ResumeItemData[]
   const teachExp = t('resume.items.teachExperience', { returnObjects: true }) as ResumeItemData[]
@@ -83,7 +77,6 @@ export default function ResumePage() {
 
   return (
     <>
-      <Breadcrumb title={t('resume.pageTitle')} crumbs={breadcrumbs} />
       <main className="py-16 pt-20">
         <div className="container">
           {/* Download buttons */}

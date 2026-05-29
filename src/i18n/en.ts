@@ -257,10 +257,81 @@ const en = {
     pageTitle: 'Gallery',
     breadcrumb: ['Home', 'Projects', 'Gallery'],
     filters: { all: 'All', illustration: 'Illustration', design: 'Design' },
+    items: [
+      { title: 'Alice', description: 'Animated version of my girlfriend' },
+      { title: 'Alien', description: 'Just an Alien' },
+      { title: 'Baby Luigi', description: 'Being kidnapped by a stork' },
+      { title: 'Background', description: 'For posts and my Twitch channel scenes' },
+      { title: 'Baron', description: "Whispers of the Heart movie cat statue" },
+      { title: 'Rock', description: 'A rock skeleton hand' },
+      { title: 'Jhon', description: 'An illustration for my friend Jhon' },
+      { title: 'Colombianito', description: 'Just a colombian guy' },
+      { title: 'Keep inside', description: 'The situation in which we could not leave home due to the pandemic' },
+      { title: 'Damiancho', description: "A representation of Damiancho94's Twitch channel" },
+      { title: 'Mike', description: 'My older brother on a demon state' },
+      { title: 'Ghosts', description: 'Ghosts in a cemetery, made for some Inktober' },
+      { title: 'Grinch', description: 'A very Christmassy grinch' },
+      { title: 'Horned skull', description: 'A skull with horns, just because' },
+      { title: 'Klaus', description: 'Main character of the Netflix movie' },
+      { title: 'Math', description: 'is way more powerful than magic' },
+      { title: 'Maycet', description: 'First logo' },
+      { title: 'Maycet', description: 'Second logo' },
+      { title: 'Maycet', description: 'Third logo' },
+      { title: 'Maycet', description: 'Current logo' },
+      { title: 'Harley', description: 'Harley-Davidson cruiser style motorcycle' },
+      { title: 'Pachitico', description: 'My childhood teddy bear' },
+      { title: 'Pacho', description: 'An animated version of myself' },
+      { title: 'Pacho', description: 'A strange version of myself' },
+      { title: 'Pacho', description: 'A "pencil" drawing version of myself' },
+      { title: 'Pacho', description: 'My favorite emote, from my Twitch channel' },
+      { title: 'Pacho', description: 'A no skin version of myself' },
+      { title: 'Rocky', description: 'One of my dear dogs' },
+      { title: 'Ship', description: "A remastered version of Galaga's ship" },
+      { title: 'Green skull', description: 'Made while I was learning some Adobe Illustrator' },
+      { title: 'Sky', description: 'Just the sky I see almost everyday' },
+      { title: 'Videocall', description: 'with her' },
+      { title: 'X-ray', description: 'View of an x-ray scanner' },
+    ],
   },
   math: {
     pageTitle: 'Mathematics',
     breadcrumb: ['Home', 'Projects', 'Mathematics'],
+    papers: [
+      {
+        collab: "In collaboration with Matias von Bell, Rafael S. González D'León & Martha Yip",
+        body: `We present a unifying framework in which both the ν-Tamari lattice, introduced by Préville-Ratelle and Viennot,
+      and principal order ideals in Young's lattice indexed by lattice paths ν, are realized as the dual graphs of two
+      combinatorially striking triangulations of a family of flow polytopes which we call the ν-caracol flow polytopes.
+      The first triangulation gives a new geometric realization of the ν-Tamari complex introduced by Ceballos, Padrol and Sarmiento.
+      We use the second triangulation to show that the h∗-vector of the ν-caracol flow polytope is given by the ν-Narayana numbers,
+      extending a result of Mészáros when ν is a staircase lattice path. Our work generalizes and unifies results on the dual structure
+      of two subdivisions of a polytope studied by Pitman and Stanley.`,
+      },
+      {
+        collab: "In collaboration with Matias von Bell, Rafael S. González D'León and Martha Yip",
+        body: `We study two combinatorially striking triangulations of a family of flow polytopes indexed by lattice paths ν which we call
+      the ν-caracol flow polytopes. The first triangulation gives a geometric realization of the ν-Tamari complex introduced by Ceballos,
+      Padrol and Sarmiento, whose dual graph is the Hasse diagram of the ν-Tamari lattice introduced by Préville-Ratelle and Viennot.
+      The dual graph of the second triangulation is the Hasse diagram of the principal order ideal determined by ν in Young's lattice.
+      We use the latter triangulation to show that the h*-vector of the ν-caracol flow polytope is given by the ν-Narayana numbers,
+      extending the result of Mészáros when ν is a staircase lattice path.`,
+      },
+      {
+        collab: "Thesis with which I obtained the undergraduate degree in mathematics",
+        body: `Associated with a directed graph G and a sequence that represents net flows at the vertices of G we can define a polytope
+      whose points correspond to flows through the directed edges of G. The family of polytopes obtained in this way are called flow
+      polytopes and are the subject of recent study. Stanley-Postnikov and Mezsáros-Morales-Striker proposed a procedure to construct
+      different subdivisions of a flow polytope. For the net flow sequence (1,0,...,0), any such subdivision turns out to be a
+      triangulation. We study the dual graphs of such triangulations for a particular family of graphs known as Caracol graphs,
+      previously studied by Benedetti et al., and whose associated flow polytopes have normalized volumes given by the Catalan numbers.
+      We show that the dual graph of one of the triangulations turns out to be 1-skeleton of the simplicial Associahedron and the other
+      is a toggle graph that is obtained through inversion operations on the set of Dyck paths.`,
+      },
+      {
+        collab: "Poster presented in the XXII Colombian Congress of Mathematics",
+        body: "In this event I gave a brief introduction to the topics studied for my undergraduate thesis, with some examples and the results we achieved in that work.",
+      },
+    ],
   },
   terms: {
     pageTitle: 'Terms of Use',

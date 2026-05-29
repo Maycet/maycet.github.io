@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { Link, useLocation, useParams } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { Icon } from '@iconify/react'
 import ThemeToggle from '../ui/ThemeToggle'
@@ -7,17 +7,22 @@ import ThemeToggle from '../ui/ThemeToggle'
 export default function Header() {
   const { lang = 'en' } = useParams<{ lang: string }>()
   const { t } = useTranslation()
+  const { pathname } = useLocation()
   const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
   const [projectsOpen, setProjectsOpen] = useState(false)
   const navRef = useRef<HTMLDivElement>(null)
-  const dropdownRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50)
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
+
+  useEffect(() => {
+    setProjectsOpen(false)
+    setMobileOpen(false)
+  }, [pathname])
 
   useEffect(() => {
     const handleClick = (e: MouseEvent) => {
@@ -29,17 +34,6 @@ export default function Header() {
     document.addEventListener('mousedown', handleClick)
     return () => document.removeEventListener('mousedown', handleClick)
   }, [])
-
-  useEffect(() => {
-    if (!projectsOpen) return
-    const handleClick = (e: MouseEvent) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
-        setProjectsOpen(false)
-      }
-    }
-    document.addEventListener('mousedown', handleClick)
-    return () => document.removeEventListener('mousedown', handleClick)
-  }, [projectsOpen])
 
   const otherLang = lang === 'es' ? 'en' : 'es'
   const base = `/${lang}`
@@ -70,7 +64,7 @@ export default function Header() {
             {t('nav.about')}
           </Link>
           {/* Projects dropdown */}
-          <div className="relative" ref={dropdownRef}>
+          <div className="relative">
             <button
               onClick={() => setProjectsOpen(o => !o)}
               className="flex items-center gap-1 text-[var(--text)] hover:text-[var(--accent)] transition-colors font-medium cursor-pointer"

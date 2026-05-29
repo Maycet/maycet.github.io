@@ -257,10 +257,82 @@ const es = {
     pageTitle: 'Galería',
     breadcrumb: ['Inicio', 'Proyectos', 'Galería'],
     filters: { all: 'Todo', illustration: 'Ilustración', design: 'Diseño' },
+    items: [
+      { title: 'Alice', description: 'Versión animada de mi novia' },
+      { title: 'Alien', description: 'Solo un Alien' },
+      { title: 'Baby Luigi', description: 'Siendo secuestrado por una cigüeña' },
+      { title: 'Fondo', description: 'Para publicaciones y las escenas de mi canal de Twitch' },
+      { title: 'Barón', description: 'Estatua del gato de la película Susurros del corazón' },
+      { title: 'Roca', description: 'Una mano esqueleto de roca' },
+      { title: 'Jhon', description: 'Una ilustración para mi amigo Jhon' },
+      { title: 'Colombianito', description: 'Solo un colombiano' },
+      { title: 'Quédate en casa', description: 'La situación en la que no podíamos salir de casa por la pandemia' },
+      { title: 'Damiancho', description: 'Una representación del canal de Twitch de Damiancho94' },
+      { title: 'Mike', description: 'Mi hermano mayor en modo demonio' },
+      { title: 'Fantasmas', description: 'Fantasmas en un cementerio, hecho para algún Inktober' },
+      { title: 'Grinch', description: 'Un Grinch muy navideño' },
+      { title: 'Calavera con cuernos', description: 'Una calavera con cuernos, simplemente porque sí' },
+      { title: 'Klaus', description: 'Personaje principal de la película de Netflix' },
+      { title: 'Matemáticas', description: 'son mucho más poderosas que la magia' },
+      { title: 'Maycet', description: 'Primer logo' },
+      { title: 'Maycet', description: 'Segundo logo' },
+      { title: 'Maycet', description: 'Tercer logo' },
+      { title: 'Maycet', description: 'Logo actual' },
+      { title: 'Harley', description: 'Motocicleta estilo cruiser Harley-Davidson' },
+      { title: 'Pachitico', description: 'Mi osito de peluche de la infancia' },
+      { title: 'Pacho', description: 'Una versión animada de mí mismo' },
+      { title: 'Pacho', description: 'Una versión extraña de mí mismo' },
+      { title: 'Pacho', description: 'Una versión de mí mismo dibujada a "lápiz"' },
+      { title: 'Pacho', description: 'Mi emote favorito, del canal de Twitch' },
+      { title: 'Pacho', description: 'Una versión sin skin de mí mismo' },
+      { title: 'Rocky', description: 'Uno de mis queridos perros' },
+      { title: 'Nave', description: 'Una versión remasterizada de la nave de Galaga' },
+      { title: 'Calavera verde', description: 'Hecha mientras aprendía Adobe Illustrator' },
+      { title: 'Cielo', description: 'Solo el cielo que veo casi todos los días' },
+      { title: 'Videollamada', description: 'con ella' },
+      { title: 'Rayos X', description: 'Vista de un escáner de rayos X' },
+    ],
   },
   math: {
     pageTitle: 'Matemáticas',
     breadcrumb: ['Inicio', 'Proyectos', 'Matemáticas'],
+    papers: [
+      {
+        collab: "En colaboración con Matias von Bell, Rafael S. González D'León y Martha Yip",
+        body: `We present a unifying framework in which both the ν-Tamari lattice, introduced by Préville-Ratelle and Viennot,
+      and principal order ideals in Young's lattice indexed by lattice paths ν, are realized as the dual graphs of two
+      combinatorially striking triangulations of a family of flow polytopes which we call the ν-caracol flow polytopes.
+      The first triangulation gives a new geometric realization of the ν-Tamari complex introduced by Ceballos, Padrol and Sarmiento.
+      We use the second triangulation to show that the h∗-vector of the ν-caracol flow polytope is given by the ν-Narayana numbers,
+      extending a result of Mészáros when ν is a staircase lattice path. Our work generalizes and unifies results on the dual structure
+      of two subdivisions of a polytope studied by Pitman and Stanley.`,
+      },
+      {
+        collab: "En colaboración con Matias von Bell, Rafael S. González D'León y Martha Yip",
+        body: `We study two combinatorially striking triangulations of a family of flow polytopes indexed by lattice paths ν which we call
+      the ν-caracol flow polytopes. The first triangulation gives a geometric realization of the ν-Tamari complex introduced by Ceballos,
+      Padrol and Sarmiento, whose dual graph is the Hasse diagram of the ν-Tamari lattice introduced by Préville-Ratelle and Viennot.
+      The dual graph of the second triangulation is the Hasse diagram of the principal order ideal determined by ν in Young's lattice.
+      We use the latter triangulation to show that the h*-vector of the ν-caracol flow polytope is given by the ν-Narayana numbers,
+      extending the result of Mészáros when ν is a staircase lattice path.`,
+      },
+      {
+        collab: "Tesis con la que obtuve el pregrado en matemáticas",
+        body: `Dado un grafo dirigido G y una secuencia que representa los flujos netos en los vértices de G, podemos definir un politopo
+      cuyos puntos corresponden a los flujos a través de las aristas dirigidas de G. La familia de politopos obtenidos de esta manera
+      se denominan politopos de flujo y son objeto de estudio reciente. Stanley-Postnikov y Mészáros-Morales-Striker propusieron un
+      procedimiento para construir distintas subdivisiones de un politopo de flujo. Para la secuencia de flujo neto (1,0,...,0),
+      cualquiera de estas subdivisiones resulta ser una triangulación. Estudiamos los grafos duales de tales triangulaciones para una
+      familia particular de grafos conocidos como grafos Caracol, previamente estudiados por Benedetti et al., cuyos politopos de flujo
+      asociados tienen volúmenes normalizados dados por los números de Catalan. Demostramos que el grafo dual de una de las
+      triangulaciones resulta ser el 1-esqueleto del Asociaedro simplicial, y el otro es un grafo de toggle que se obtiene mediante
+      operaciones de inversión sobre el conjunto de caminos de Dyck.`,
+      },
+      {
+        collab: "Póster presentado en el XXII Congreso Colombiano de Matemáticas",
+        body: "En este evento di una breve introducción a los temas estudiados para mi tesis de pregrado, con algunos ejemplos y los resultados obtenidos en ese trabajo.",
+      },
+    ],
   },
   terms: {
     pageTitle: 'Términos de uso',
