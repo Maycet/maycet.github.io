@@ -82,6 +82,8 @@ const en = {
     breadcrumb: ['Home', 'Resume'],
     downloadGeneral: 'Download General Version',
     downloadDev: 'Download Developer Version',
+    downloadGeneralPath: '/files/resume_general_noicons.pdf',
+    downloadDevPath: '/files/resume_dev_noicons.pdf',
     summary1: 'Mathematics professional with over five years of experience in software development using .NET technologies (C#, F#, Visual Basic), desktop applications (WPF), and data tools (Python, SQL).',
     summary2: 'Proven track record leading development teams and delivering high-quality solutions. Experience in backend development, desktop user interfaces, cloud platforms, and API integration.',
     experience: {

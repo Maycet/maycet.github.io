@@ -81,11 +81,11 @@ export default function ResumePage() {
         <div className="container">
           {/* Download buttons */}
           <div className="flex justify-end gap-3 mb-6 flex-wrap">
-            <a href="/files/resume_general_noicons.pdf" target="_blank" rel="noopener noreferrer" className="btn-outline text-sm">
+            <a href={t('resume.downloadGeneralPath')} target="_blank" rel="noopener noreferrer" className="btn-outline text-sm">
               <Icon icon="mdi:download" width={16} />
               {t('resume.downloadGeneral')}
             </a>
-            <a href="/files/resume_dev_noicons.pdf" target="_blank" rel="noopener noreferrer" className="btn-accent text-sm">
+            <a href={t('resume.downloadDevPath')} target="_blank" rel="noopener noreferrer" className="btn-accent text-sm">
               <Icon icon="mdi:download" width={16} />
               {t('resume.downloadDev')}
             </a>

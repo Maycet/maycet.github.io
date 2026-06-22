@@ -82,6 +82,8 @@ const es = {
     breadcrumb: ['Inicio', 'CV'],
     downloadGeneral: 'Descargar versión general',
     downloadDev: 'Descargar versión desarrollador',
+    downloadGeneralPath: '/files/hv_general_noicons.pdf',
+    downloadDevPath: '/files/hv_dev_noicons.pdf',
     summary1: 'Profesional en Matemáticas con más de cinco años de experiencia en desarrollo de software usando tecnologías .NET (C#, F#, Visual Basic), aplicaciones de escritorio (WPF) y herramientas de datos (Python, SQL).',
     summary2: 'Trayectoria comprobada liderando equipos de desarrollo y entregando soluciones de alta calidad. Experiencia en desarrollo backend, interfaces de escritorio, plataformas en la nube e integración de APIs.',
     experience: {
