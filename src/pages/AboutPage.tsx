@@ -29,7 +29,7 @@ export default function AboutPage() {
 
             <div className="flex flex-col md:flex-row gap-8 items-start">
               <img
-                src="/img/photos/franco.jpeg"
+                src="/img/photos/1000171293.png"
                 alt="Francisco Mayorga"
                 className="w-full md:w-64 flex-shrink-0 rounded-xl shadow-lg object-cover"
               />
