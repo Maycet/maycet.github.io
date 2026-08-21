@@ -12,6 +12,11 @@ type ResumeItemData = {
   orgHref?: string
   location?: string
   description?: string
+  poster?: {
+    label: string
+    title: string
+    href: string
+  }
 }
 
 type CertData = { name: string; org: string; date: string }
@@ -156,22 +161,19 @@ export default function ResumePage() {
 
               <div className="mt-8">
                 <SectionTitle>{t('resume.activities.title')}</SectionTitle>
-                {activities.map((item, i) => {
-                  const isCongressEntry = i === 1
-                  return (
-                    <div key={i}>
-                      <ResumeItem {...item} />
-                      {isCongressEntry && (
-                        <p className="text-sm text-[var(--text-muted)] -mt-4 mb-6 pl-4">
-                          <a href="/files/poster_popayan.pdf" target="_blank" rel="noopener noreferrer" className="text-[var(--accent)] hover:underline font-semibold">
-                            {t('resume.poster.label')}
-                          </a>{' '}
-                          {t('resume.poster.title')}
-                        </p>
-                      )}
-                    </div>
-                  )
-                })}
+                {activities.map((item, i) => (
+                  <div key={i}>
+                    <ResumeItem {...item} />
+                    {item.poster && (
+                      <p className="text-sm text-[var(--text-muted)] -mt-4 mb-6 pl-4">
+                        <a href={item.poster.href} target="_blank" rel="noopener noreferrer" className="text-[var(--accent)] hover:underline font-semibold">
+                          {item.poster.label}
+                        </a>{' '}
+                        {item.poster.title}
+                      </p>
+                    )}
+                  </div>
+                ))}
               </div>
             </div>
           </motion.div>
@@ -197,21 +199,21 @@ export default function ResumePage() {
                 className="flex items-center gap-2 text-[var(--text-muted)] hover:text-[var(--accent)] transition-colors"
               >
                 <Icon icon="mdi:linkedin" width={20} />
-                LinkedIn profile
+                {t('resume.contact.linkedin')}
               </a>
               <a
                 href="mailto:f.maycet@gmail.com"
                 className="flex items-center gap-2 text-[var(--text-muted)] hover:text-[var(--accent)] transition-colors"
               >
                 <Icon icon="mdi:email-outline" width={20} />
-                f.maycet@gmail.com
+                {t('resume.contact.email')}
               </a>
               <a
                 href="https://wa.me/+573202128525"
                 className="flex items-center gap-2 text-[var(--text-muted)] hover:text-[var(--accent)] transition-colors"
               >
                 <Icon icon="mdi:whatsapp" width={20} />
-                +57 320 212 8525
+                {t('resume.contact.whatsapp')}
               </a>
             </div>
           </div>

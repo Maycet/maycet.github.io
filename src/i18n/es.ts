@@ -94,7 +94,12 @@ const es = {
     education: { title: 'Educación' },
     publications: { title: 'Publicaciones' },
     activities: { title: 'Actividades y eventos' },
-    contact: { title: 'Contacto:' },
+    contact: {
+      title: 'Contacto:',
+      linkedin: 'Perfil de LinkedIn',
+      email: 'f.maycet@gmail.com',
+      whatsapp: '+57 320 212 8525',
+    },
     skills: { title: 'Habilidades' },
     certifications: { sectionTitle: 'Otros cursos y certificaciones' },
     thesis: {
@@ -124,7 +129,7 @@ const es = {
           description: 'Liderar el desarrollo de productos relacionados con instrumentos de inversión. Coordinar nuevos despliegues en la nube e integración con sistemas de identidad empresarial. Brindar soporte al cliente y resolución de incidentes.',
         },
         {
-          title: 'Consultor de Analytics',
+          title: 'Consultor Analítico',
           period: 'Julio 2024 – Diciembre 2024',
           org: 'CALA Analytics',
           orgHref: 'https://www.linkedin.com/company/calaanalytics/',
@@ -132,7 +137,7 @@ const es = {
           description: 'Implementación, documentación y despliegue de herramientas analíticas usando Python y SQL.',
         },
         {
-          title: 'Coordinador de Desarrollo – Mantenimiento y Soporte',
+          title: 'Coordinador de Desarrollo – Soporte y Mantenimiento',
           period: 'Septiembre 2023 – Julio 2024',
           org: 'Finanzas y Actuaría (Finac S.A.S)',
           orgHref: 'https://www.linkedin.com/company/finac-finanzas-y-actuar%C3%ADa',
@@ -140,7 +145,7 @@ const es = {
           description: 'Supervisar el equipo de desarrollo de mantenimiento. Gestionar la asignación de recursos y seguimiento de tareas en Azure DevOps. Liderar mejoras de software basadas en WPF y .NET.',
         },
         {
-          title: 'Desarrollador II (Desarrollador Senior .NET)',
+          title: 'Desarrollador Senior .NET',
           period: 'Agosto 2023 – Septiembre 2023',
           org: 'Sii Group Colombia (proyecto Thales)',
           orgHref: 'https://www.linkedin.com/company/sii-group-colombia',
@@ -148,7 +153,7 @@ const es = {
           description: 'Responsable de analizar, diseñar e implementar nuevas funcionalidades en aplicaciones, así como de mantener o mejorar las existentes, con enfoque en optimización, seguridad y buenas prácticas de desarrollo.',
         },
         {
-          title: 'Profesional de Desarrollo II',
+          title: 'Profesional II de Desarrollo',
           period: 'Enero 2023 – Agosto 2023',
           org: 'Finanzas y Actuaría (Finac S.A.S)',
           orgHref: 'https://www.linkedin.com/company/finac-finanzas-y-actuar%C3%ADa',
@@ -166,7 +171,7 @@ const es = {
       ],
       teachExperience: [
         {
-          title: 'Profesor de Cátedra',
+          title: 'Docente Catedrático',
           period: 'Octubre 2025 – Diciembre 2025',
           org: 'Universidad Sergio Arboleda',
           orgHref: 'https://www.usergioarboleda.edu.co/',
@@ -174,28 +179,28 @@ const es = {
           description: 'Computación Científica – Enseñar clases teóricas y prácticas de programación aplicadas a las matemáticas.',
         },
         {
-          title: 'Coordinador del grupo de monitores Sergistas',
+          title: 'Coordinador de Monitores',
           period: 'Junio 2018 – Enero 2020',
           org: 'Universidad Sergio Arboleda',
           orgHref: 'https://www.usergioarboleda.edu.co/',
           location: 'Bogotá D.C., Colombia',
-          description: 'Selección de candidatos, evaluación del desempeño de monitores y gestión administrativa y logística.',
+          description: 'Procesos de selección de miembros del equipo. Evaluación de resultados al final del período académico. Logística en actividades de integración.',
         },
         {
-          title: 'Docente de Educación Continua: Programa "Talentos matemáticos"',
+          title: 'Docente de Educación Continua (Programa de Talentos Matemáticos)',
           period: 'Marzo 2019 – Mayo 2019',
           org: 'Universidad Sergio Arboleda',
           orgHref: 'https://www.usergioarboleda.edu.co/',
           location: 'Bogotá D.C., Colombia',
-          description: 'Cursos para estudiantes con altas capacidades en matemáticas y tecnología.',
+          description: 'Educación para niños y jóvenes con facilidades para matemáticas. Fortalecimiento de habilidades para la divulgación de conocimientos científicos.',
         },
         {
           title: 'Voluntario',
           period: 'Febrero 2019 – Noviembre 2020',
-          org: 'Fundación HAIKO',
-          orgHref: 'https://www.linkedin.com/company/fundacionhaiko',
+          org: 'Fundación Haiko',
+          orgHref: 'https://www.facebook.com/fundacionhaiko/',
           location: 'Bogotá D.C., Colombia',
-          description: 'Acompañamiento docente en cursos de Matemáticas Discretas y Pensamiento Computacional.',
+          description: 'Acompañamiento a docentes y estudiantes durante actividades académicas. Apoyo en labores logísticas para el desarrollo de las distintas clases.',
         },
       ],
       education: {
@@ -206,11 +211,13 @@ const es = {
         location: 'Bogotá D.C., Colombia',
       },
       certifications: [
+        { name: 'C1 Advanced', org: 'EF SET English Certificate 65/100', date: 'Agosto 2026' },
+        { name: 'Claude 101', org: 'Anthropic', date: 'Agosto 2026' },
+        { name: 'Software Architecture: From Developer to Architect', org: 'LinkedIn Learning', date: 'Junio 2026' },
         { name: 'Tech Career Skills: Moving from Developer to Engineering Manager', org: 'LinkedIn Learning', date: 'Mayo 2026' },
         { name: 'React Development', org: 'Programming Hub', date: 'Marzo 2026' },
         { name: 'Blazor - The Complete Guide [.NET 9] [2025] [E-commerce]', org: 'Udemy', date: 'Enero 2026' },
         { name: 'Exploring your DATAVERSE with IBM SPSS Modeler', org: 'Cala Academy', date: 'Julio 2024' },
-        { name: 'B2 Upper Intermediate', org: 'EF SET English Certificate', date: 'Agosto 2023' },
         { name: 'HTML, JavaScript and Services', org: 'ITTalent', date: 'Agosto 2022' },
         { name: 'UI/UX Certification Course', org: 'Programming Hub', date: 'Noviembre 2021' },
         { name: 'Python 3 Certification Course', org: 'Programming Hub', date: 'Agosto 2020' },
@@ -245,6 +252,11 @@ const es = {
           period: 'Junio 2019',
           org: 'Ponente, Universidad del Cauca, Popayán',
           orgHref: 'https://scm.org.co/ccm2019/',
+          poster: {
+            label: 'Póster:',
+            title: 'Flow polytopes and triangulations of the Caracol polytope.',
+            href: '/files/poster_popayan.pdf',
+          },
         },
         {
           title: 'Cube Challenge Sergista',
